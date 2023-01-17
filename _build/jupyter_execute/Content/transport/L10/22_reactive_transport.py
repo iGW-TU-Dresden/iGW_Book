@@ -23,8 +23,6 @@ from IPython.display import Latex
 # The last lecture dealt with the  conservative transport processes and  quantified the mass flow and flux emanating from those processes. The effects of these processes were evaluated as an isolated processes and as joint transport process. 
 # 
 # 
-# The last lecture dealt with the  conservative transport processes and  quantified the mass flow and flux emanating from those processes. The effects of these processes were evaluated as an isolated processes and as joint transport process. 
-# 
 # ```{admonition} Important conclusions from last lecture
 # >  $J_{adv}>J_{dis}>>J_{diff}$ is observed in normal aquifers. 
 # 
@@ -119,35 +117,6 @@ from IPython.display import Latex
 # $$
 # 
 # The subscript in ${{disp, h}}$ refers to _hydrodynamic dispersion_ which is sum of _mechanical dispersion_ and _diffusion_. Likewise, the subscript ${{disp,\, hx}}$, ${{disp,\, hy}}$ and ${{disp,\, hz}}$ refers to dispersion components along the Cartesian coordinates. The corresponding mass flow and mass flux in the higher dimension is then:
-# 
-# $$
-# J_{disp,\, h} = - n_e \cdot A \cdot D_{hyd} \cdot \text{grad}C
-# $$
-# 
-# and
-# 
-# ###  Isotropic and Anisotropic  Dispersion
-# 
-# Corresponding the expression for the concentration gradient at higher dimensions, the expression for mass flow and flux becomes:
-# 
-# $$
-# J_{disp,\, h} = \begin{pmatrix}
-# J_{disp,\, hx}\\
-# J_{disp,\, hy}\\
-# J_{disp,\, hz}
-# \end{pmatrix}
-# $$
-# and the 3-D mass flux is:
-# 
-# $$
-# j_{disp,\, h} = \begin{pmatrix}
-# j_{disp,\, hx}\\
-# j_{disp,\, hy}\\
-# j_{disp,\, hz}
-# \end{pmatrix}
-# $$
-# 
-# The subscript in ${{disp,\, h}}$ refers to _hydrodynamic dispersion_ which is sum of _mechanical dispersion_ and _diffusion_. Likewise, the subscript ${{disp,\, hx}}$, ${{disp,\, hy}}$ and ${{disp,\, hz}}$ refers to dispersion components along the Cartesian coordinates. The corresponding mass flow and mass flux in the higher dimension is then:
 # 
 # $$
 # J_{disp,\, h} = - n_e \cdot A \cdot D_{hyd} \cdot \text{grad}C
