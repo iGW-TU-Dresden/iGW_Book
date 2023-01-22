@@ -1,9 +1,60 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-
-format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+format: jb-book
+
+parts:
+- caption: Basics
+  numbered: true
+  chapters:
+  - file: content/background/00_general
+  - file: content/background/03_basic_hydrogeology
+- caption: Flow
+  numbered: true
+  chapters:
+  - file: content/flow/12_subsurface_structure
+  - file: content/flow/L3/13_gw_storage
+  - file: content/flow/L4/14_darcy_law_K
+  - file: content/flow/L5/15_het_iso
+  - file: content/flow/L6/16_darcy_law_3D
+  - file: content/flow/L7/17_quantify_flow
+  - file: content/flow/L8/18_wells
+  
+- caption: Transport
+  numbered: true
+  chapters:
+  - file: content/transport/L9/21_conservative_transport
+  - file: content/transport/L10/22_reactive_transport
+- caption: Modeling
+  numbered: true
+  chapters:
+  - file: content/modeling/31_intro_modeling.ipynb
+
+  
+- caption: Tutorials
+  numbered: true
+  chapters:
+  - file: content/background/01_python
+  - file: content/background/02_jupyter
+  - file: content/tutorials/T2/tutorial_02
+  - file: content/tutorials/T3/tutorial_03
+  - file: content/tutorials/T4/tutorial_04
+  - file: content/tutorials/T5/tutorial_05
+  - file: content/tutorials/T6/tutorial_06
+  - file: content/tutorials/T7/tutorial_07
+  - file: content/tutorials/T8/tutorial_08
+  - file: content/tutorials/T9/tutorial_09
+- caption: Tools
+  numbered: true
+  chapters:
+  - file: content/tools/decay
+  - file: content/tools/sieve_analysis
+  - file: content/tools/effective_K
+  - file: content/tools/uniform_flow_and_well
+  - file: content/tools/aniso2D
+  - file: content/tools/type_curve_fit
+  - file: content/tools/1D_advection_dispersion
+  - file: content/tools/Kinetics_degradation
+  - file: content/tools/1D_ditchflow
+- caption: Previous Years Q&A
+  numbered: true
+  chapters:
+  - file: content/Q_and_A/GW_exam_2019_20

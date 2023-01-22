@@ -1,3 +1,8 @@
 jupyter-book
 matplotlib
 numpy
+jupyterquiz
+ghp-import
+pandas
+panel
+ipybwidgets

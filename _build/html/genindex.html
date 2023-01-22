@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; My sample book</title>
+    <title>Index &#8212; Groundwater I</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -33,7 +34,6 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
@@ -42,6 +42,8 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="_static/custom.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
@@ -53,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en">
+    <meta name="docsearch:language" content="None">
     
 
     <!-- Google Analytics -->
@@ -92,10 +94,10 @@ const thebe_selector_output = ".output, .cell_output"
         
       
       
-      <img src="_static/logo.png" class="logo" alt="logo">
+      <img src="_static/logo.jpg" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">My sample book</h1>
+      <h1 class="site-logo" id="site-title">Groundwater I</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -107,24 +109,216 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    The Interactive Groundwater-I Book
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Basics
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="markdown.html">
-   Markdown Files
+  <a class="reference internal" href="content/background/00_general.html">
+   1. About this Groundwater Course and Contents
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="notebooks.html">
-   Content with notebooks
+  <a class="reference internal" href="content/background/03_basic_hydrogeology.html">
+   2. Course Introduction &amp; Water Cycle
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Flow
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/flow/12_subsurface_structure.html">
+   1. Subsurface Structure
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="markdown-notebooks.html">
-   Notebooks with MyST Markdown
+  <a class="reference internal" href="content/flow/L3/13_gw_storage.html">
+   2. Groundwater as a reservoir
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/flow/L4/14_darcy_law_K.html">
+   3. Darcy’s Law and Conductivity
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/flow/L5/15_het_iso.html">
+   4. Aquifer Heterogeneity and Anisotropy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/flow/L6/16_darcy_law_3D.html">
+   5. Steady-State Groundwater flow in 3D
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/flow/L7/17_quantify_flow.html">
+   6. Quantifying 3D Groundwater Flow
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/flow/L8/18_wells.html">
+   7. Wells
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Transport
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/transport/L9/21_conservative_transport.html">
+   1. Conservative Transport
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/transport/L10/22_reactive_transport.html">
+   2. Reactive Mass Transport
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Modeling
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/modeling/31_intro_modeling.html">
+   1. Background of Groundwater Modeling
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tutorials
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/background/01_python.html">
+   1. Python Programming language
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/background/02_jupyter.html">
+   2. JUPYTER Notebook Interface for Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tutorials/T2/tutorial_02.html">
+   3. Aquifer and Storage Properties
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tutorials/T3/tutorial_03.html">
+   4. Darcy Law and Conductivity
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tutorials/T4/tutorial_04.html">
+   5. Effective K &amp; Recitation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tutorials/T5/tutorial_05.html">
+   6. Aquifer Heterogeneity/Anisotropy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tutorials/T6/tutorial_06.html">
+   7. Flow in Confined/Unconfined Aquifer
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tutorials/T7/tutorial_07.html">
+   8. Wells
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tutorials/T8/tutorial_08.html">
+   9. Conservative transport
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tutorials/T9/tutorial_09.html">
+   10. Reactive transport
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tools
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tools/decay.html">
+   1. Simulating Mass Budget
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tools/sieve_analysis.html">
+   2. Simulating Seive Analysis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tools/effective_K.html">
+   3. Simulating Effective hydraulic conductivity
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tools/uniform_flow_and_well.html">
+   4. Uniform Flow and Well
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tools/aniso2D.html">
+   5. Simulating the Anisotropy and flow direction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tools/type_curve_fit.html">
+   6. Type curve and fitting pumping data tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tools/1D_advection_dispersion.html">
+   7. Tool for simulating 1D Conservative Transport (Laboratory Column)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tools/Kinetics_degradation.html">
+   8. Simulating Kinetics and Degradation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/tools/1D_ditchflow.html">
+   9. Simulating 1D Trench Flow
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Previous Years Q&amp;A
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="content/Q_and_A/GW_exam_2019_20.html">
+   1. Groundwater Exam Solution -  2019-2020
   </a>
  </li>
 </ul>
@@ -200,7 +394,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book"
+        <a href="https://github.com/iGW-TU-Dresden/iGW_Book"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -217,7 +411,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/iGW-TU-Dresden/iGW_Book/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -282,9 +476,15 @@ title="Open an issue"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The Jupyter Book Community<br/>
+    By Dr Prabhas K. Yadav<br/>
   
       &copy; Copyright 2022.<br/>
+    <div class="extra_footer">
+      <div>
+ All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
+</div>
+
+    </div>
 </p>
         </footer>
     </div>
