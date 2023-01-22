@@ -1,5 +1,0 @@
-format: jb-book
-root: intro
-chapters:
-- file: content/background/00_general
-- file: content/background/03_basic_hydrogeology
