@@ -1,51 +1,67 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>4. Aquifer Heterogeneity and Anisotropy &#8212; Groundwater I</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../../../_static/.ipynb_checkpoints/custom-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/.ipynb_checkpoints/myfile-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script src="../../../_static/custom.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/.ipynb_checkpoints/custom-checkpoint.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -55,61 +71,104 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/flow/L5/15_het_iso';</script>
+    <link rel="canonical" href="https://github.com/iGW-TU-Dresden/iGW_Book/content/flow/L5/15_het_iso.html" />
+    <link rel="shortcut icon" href="../../../_static/logo.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="5. Steady-State Groundwater flow in 3D" href="../L6/16_darcy_law_3D.html" />
     <link rel="prev" title="3. Darcy’s Law and Conductivity" href="../L4/14_darcy_law_K.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
 
-    
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../../index.html">
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../../intro.html">
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../../../_static/logo.jpg" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Groundwater I</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../../../_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -118,693 +177,326 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Basics
- </span>
-</p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Basics</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../background/00_general.html">
-   1. About this Groundwater Course and Contents
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../background/03_basic_hydrogeology.html">
-   2. Course Introduction &amp; Water Cycle
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../background/00_general.html">1. About this Groundwater Course and Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../background/03_basic_hydrogeology.html">2. Course Introduction &amp; Water Cycle</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Flow
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Flow</span></p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../12_subsurface_structure.html">
-   1. Subsurface Structure
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../L3/13_gw_storage.html">
-   2. Groundwater as a reservoir
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../L4/14_darcy_law_K.html">
-   3. Darcy’s Law and Conductivity
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   4. Aquifer Heterogeneity and Anisotropy
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../L6/16_darcy_law_3D.html">
-   5. Steady-State Groundwater flow in 3D
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../L7/17_quantify_flow.html">
-   6. Quantifying 3D Groundwater Flow
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../L8/18_wells.html">
-   7. Wells
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../12_subsurface_structure.html">1. Subsurface Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L3/13_gw_storage.html">2. Groundwater as a reservoir</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L4/14_darcy_law_K.html">3. Darcy’s Law and Conductivity</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Aquifer Heterogeneity and Anisotropy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L6/16_darcy_law_3D.html">5. Steady-State Groundwater flow in 3D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L7/17_quantify_flow.html">6. Quantifying 3D Groundwater Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../L8/18_wells.html">7. Wells</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Transport
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Transport</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../transport/L9/21_conservative_transport.html">
-   1. Conservative Transport
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../transport/L10/22_reactive_transport.html">
-   2. Reactive Mass Transport
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../transport/L9/21_conservative_transport.html">1. Conservative Transport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../transport/L10/22_reactive_transport.html">2. Reactive Mass Transport</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Modeling
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Modeling</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../modeling/31_intro_modeling.html">
-   1. Background of Groundwater Modeling
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/31_intro_modeling.html">1. Background of Groundwater Modeling</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Tutorials
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tutorials</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../background/01_python.html">
-   1. Python Programming language
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../background/02_jupyter.html">
-   2. JUPYTER Notebook Interface for Python
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tutorials/T2/tutorial_02.html">
-   3. Aquifer and Storage Properties
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tutorials/T3/tutorial_03.html">
-   4. Darcy Law and Conductivity
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tutorials/T4/tutorial_04.html">
-   5. Effective K &amp; Recitation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tutorials/T5/tutorial_05.html">
-   6. Aquifer Heterogeneity/Anisotropy
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tutorials/T6/tutorial_06.html">
-   7. Flow in Confined/Unconfined Aquifer
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tutorials/T7/tutorial_07.html">
-   8. Wells
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tutorials/T8/tutorial_08.html">
-   9. Conservative transport
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tutorials/T9/tutorial_09.html">
-   10. Reactive transport
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../background/01_python.html">1. Python Programming language</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../background/02_jupyter.html">2. JUPYTER Notebook Interface for Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/T2/tutorial_02.html">3. Aquifer and Storage Properties</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/T3/tutorial_03.html">4. Darcy Law and Conductivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/T4/tutorial_04.html">5. Effective K &amp; Recitation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/T5/tutorial_05.html">6. Aquifer Heterogeneity/Anisotropy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/T6/tutorial_06.html">7. Flow in Confined/Unconfined Aquifer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/T7/tutorial_07.html">8. Wells</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/T8/tutorial_08.html">9. Conservative transport</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/T9/tutorial_09.html">10. Reactive transport</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Tools
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Tools</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tools/decay.html">
-   1. Simulating Mass Budget
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tools/sieve_analysis.html">
-   2. Simulating Seive Analysis
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tools/effective_K.html">
-   3. Simulating Effective hydraulic conductivity
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tools/uniform_flow_and_well.html">
-   4. Uniform Flow and Well
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tools/aniso2D.html">
-   5. Simulating the Anisotropy and flow direction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tools/type_curve_fit.html">
-   6. Type curve and fitting pumping data tool
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tools/1D_advection_dispersion.html">
-   7. Tool for simulating 1D Conservative Transport (Laboratory Column)
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tools/Kinetics_degradation.html">
-   8. Simulating Kinetics and Degradation
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../tools/1D_ditchflow.html">
-   9. Simulating 1D Trench Flow
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/decay.html">1. Simulating Mass Budget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/sieve_analysis.html">2. Simulating Seive Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/effective_K.html">3. Simulating Effective hydraulic conductivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/uniform_flow_and_well.html">4. Uniform Flow and Well</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/aniso2D.html">5. Simulating the Anisotropy and flow direction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/type_curve_fit.html">6. Type curve and fitting pumping data tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_advection_dispersion.html">7. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/Kinetics_degradation.html">8. Simulating Kinetics and Degradation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_ditchflow.html">9. Simulating 1D Trench Flow</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Previous Years Q&amp;A
- </span>
-</p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Previous Years Q&amp;A</span></p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../Q_and_A/GW_exam_2019_20.html">
-   1. Groundwater Exam Solution -  2019-2020
-  </a>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="../../Q_and_A/GW_exam_2019_20.html">1. Groundwater Exam Solution -  2019-2020</a></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
-
-
-          
-
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/iGW-TU-Dresden/iGW_Book/main?urlpath=tree/content/flow/L5/15_het_iso.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
   
-
-<span class="headerbtn__icon-container">
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
   
-    <img src="../../../_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
+  <div id="rtd-footer-container"></div>
 
-      </li>
+
+      </div>
       
-      <li>
-        <a href="https://colab.research.google.com/github/iGW-TU-Dresden/iGW_Book/blob/main/content/flow/L5/15_het_iso.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Colab"
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/iGW-TU-Dresden/iGW_Book/blob/main/content/flow/L5/15_het_iso.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   
     <img src="../../../_static/images/logo_colab.png">
   </span>
-<span class="headerbtn__text-container">Colab</span>
+<span class="btn__text-container">Colab</span>
 </a>
-
-      </li>
+</li>
       
-      <li>
-        
-<button onclick="initThebeSBT()"
-  class="headerbtn headerbtn-launch-thebe"
-  data-toggle="tooltip"
-data-placement="left"
-title="Launch Thebe"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-play"></i>
-  </span>
-<span class="headerbtn__text-container">Live Code</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
+  </ul>
 </div>
 
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/iGW-TU-Dresden/iGW_Book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/iGW-TU-Dresden/iGW_Book/issues/new?title=Issue%20on%20page%20%2Fcontent/flow/L5/15_het_iso.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../_sources/content/flow/L5/15_het_iso.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/iGW-TU-Dresden/iGW_Book"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/iGW-TU-Dresden/iGW_Book/issues/new?title=Issue%20on%20page%20%2Fcontent/flow/L5/15_het_iso.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../../../_sources/content/flow/L5/15_het_iso.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#motivation">
-   4.1. Motivation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#heterogeneity">
-   4.2. Heterogeneity
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#effective-hydraulic-conductivity">
-     4.2.1. Effective Hydraulic Conductivity
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#layered-systems">
-   4.3. Layered Systems
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#case-i-flow-parallel-to-layering">
-     4.3.1. Case I - Flow Parallel to Layering
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-problem">
-     4.3.2. Example problem
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#case-2-flow-perpendicular-to-layering">
-     4.3.3. Case 2 - Flow Perpendicular to Layering
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     4.3.4. Example problem
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#summary-effective-conductivity-of-layered-aquifers">
-     4.3.5. Summary: Effective Conductivity of Layered Aquifers
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hydraulic-resistance">
-   4.4. Hydraulic Resistance
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     4.4.1. Example problem
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#aquifer-anisotropy">
-   4.5. Aquifer Anisotropy
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#anisotropy-and-scale-effects">
-     4.5.1. Anisotropy and scale effects
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#indices-and-functional-arguments-to-describe-anisotropy">
-     4.5.2. Indices and functional arguments to describe anisotropy
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#concept-of-the-hydraulic-conductivity-ellipse">
-     4.5.3. Concept of the hydraulic conductivity ellipse
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     4.5.4. Example problem
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#combining-heterogeneity-and-anisotropy">
-   4.6. Combining Heterogeneity and Anisotropy
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#chapter-quiz">
-   4.7. Chapter Quiz
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Aquifer Heterogeneity and Anisotropy</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#motivation">
-   4.1. Motivation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#heterogeneity">
-   4.2. Heterogeneity
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#effective-hydraulic-conductivity">
-     4.2.1. Effective Hydraulic Conductivity
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#layered-systems">
-   4.3. Layered Systems
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#case-i-flow-parallel-to-layering">
-     4.3.1. Case I - Flow Parallel to Layering
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#example-problem">
-     4.3.2. Example problem
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#case-2-flow-perpendicular-to-layering">
-     4.3.3. Case 2 - Flow Perpendicular to Layering
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     4.3.4. Example problem
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#summary-effective-conductivity-of-layered-aquifers">
-     4.3.5. Summary: Effective Conductivity of Layered Aquifers
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hydraulic-resistance">
-   4.4. Hydraulic Resistance
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     4.4.1. Example problem
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#aquifer-anisotropy">
-   4.5. Aquifer Anisotropy
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#anisotropy-and-scale-effects">
-     4.5.1. Anisotropy and scale effects
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#indices-and-functional-arguments-to-describe-anisotropy">
-     4.5.2. Indices and functional arguments to describe anisotropy
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#concept-of-the-hydraulic-conductivity-ellipse">
-     4.5.3. Concept of the hydraulic conductivity ellipse
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     4.5.4. Example problem
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#combining-heterogeneity-and-anisotropy">
-   4.6. Combining Heterogeneity and Anisotropy
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#chapter-quiz">
-   4.7. Chapter Quiz
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Aquifer Heterogeneity and Anisotropy</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
-                
-              <div>
-                
-  <aside class="sidebar">
-<p class="sidebar-title">Additional Material : Lecture Slides</p>
-<div class="toggle docutils container">
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSV04S9lhhZF2brpVIleI_UJYLVbrErYTtzE_XAY97ypV4QsGUpzkqxJ0BB3AZhpA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">4.1. Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heterogeneity">4.2. Heterogeneity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effective-hydraulic-conductivity">4.2.1. Effective Hydraulic Conductivity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#layered-systems">4.3. Layered Systems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-i-flow-parallel-to-layering">4.3.1. Case I - Flow Parallel to Layering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem">4.3.2. Example problem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-2-flow-perpendicular-to-layering">4.3.3. Case 2 - Flow Perpendicular to Layering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4.3.4. Example problem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-effective-conductivity-of-layered-aquifers">4.3.5. Summary: Effective Conductivity of Layered Aquifers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hydraulic-resistance">4.4. Hydraulic Resistance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.4.1. Example problem</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aquifer-anisotropy">4.5. Aquifer Anisotropy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anisotropy-and-scale-effects">4.5.1. Anisotropy and scale effects</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indices-and-functional-arguments-to-describe-anisotropy">4.5.2. Indices and functional arguments to describe anisotropy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#concept-of-the-hydraulic-conductivity-ellipse">4.5.3. Concept of the hydraulic conductivity ellipse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.5.4. Example problem</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-heterogeneity-and-anisotropy">4.6. Combining Heterogeneity and Anisotropy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-material">4.7. Additional Material</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-quiz">4.8. Chapter Quiz</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
 </div>
-</aside>
-<section class="tex2jax_ignore mathjax_ignore" id="aquifer-heterogeneity-and-anisotropy">
-<h1><span class="section-number">4. </span>Aquifer Heterogeneity and Anisotropy<a class="headerlink" href="#aquifer-heterogeneity-and-anisotropy" title="Permalink to this headline">#</a></h1>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="aquifer-heterogeneity-and-anisotropy">
+<h1><span class="section-number">4. </span>Aquifer Heterogeneity and Anisotropy<a class="headerlink" href="#aquifer-heterogeneity-and-anisotropy" title="Permalink to this heading">#</a></h1>
 <p><em>(The contents presented in this section were re-developed principally by <a class="reference external" href="http://web.iitd.ac.in/~chahar/">Prof. B. R. Chahar</a> and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)</em></p>
 <hr class="docutils" />
 <section id="motivation">
-<h2><span class="section-number">4.1. </span>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.1. </span>Motivation<a class="headerlink" href="#motivation" title="Permalink to this heading">#</a></h2>
 <p>The last lecture introduces aquifer properties such hydraulic conductivity, storativity, porosity. The key assumption in that lecture was that the aquifer is an 1D unit, e.g., the Darcy column, and that its properties do not vary in space. In contrast to these, an aquifer is more accurately represented by a 3D system and its properties vary both in space and directions. In fact variations of hydraulic conductivity (<span class="math notranslate nohighlight">\(K\)</span>), a most critical aquifer quantity, are dominant in most cases. Variations of <span class="math notranslate nohighlight">\(K\)</span> can be observed at very small spatial scales and directions. Thus, aquifer properties that depends on <span class="math notranslate nohighlight">\(K\)</span> also varies. Consequently, aquifer properties such as <span class="math notranslate nohighlight">\(K\)</span> takes a tensor form- a quantity whose magnitude is space and direction dependent.</p>
 <p>In the picture below (<a class="reference internal" href="#aquifer-het"><span class="std std-numref">Fig. 4.1</span></a>) the 3-D spatial variability of aquifer properties is illustrated by a 2-D vertical cross-section. The picture of the outcrop show some form of a layered system, with each layer likely possessing individual subsurface properties.</p>
 <figure class="align-center" id="aquifer-het">
@@ -815,7 +507,7 @@ title="Print to PDF"
 </figure>
 </section>
 <section id="heterogeneity">
-<h2><span class="section-number">4.2. </span>Heterogeneity<a class="headerlink" href="#heterogeneity" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.2. </span>Heterogeneity<a class="headerlink" href="#heterogeneity" title="Permalink to this heading">#</a></h2>
 <p>A solid or a porous medium is <strong>homogeneous</strong> if its property do not vary in space. In contrast, the porous medium is <strong>heterogeneous</strong>, or also sometime termed inhomogeneous, if at least one of its properties varies in space. In groundwater studies, heterogeneity or homogeneity is generally associated with hydraulic conductivity <span class="math notranslate nohighlight">\((K)\)</span> of the aquifer. In many practical applications, properties such as strativity and porosity are treated as spatially constant or homogeneous. This is usually done for two reasons:</p>
 <ul class="simple">
 <li><p>the spatial variability of hydraulic conductivity is much more pronounced than that of storativity and porosity, and</p></li>
@@ -846,7 +538,7 @@ title="Print to PDF"
 </ul>
 <p>Heterogeneity play a significant role in controlling the flow of groundwater, but its quantification is more relevant to the transport of chemicals in groundwater.</p>
 <section id="effective-hydraulic-conductivity">
-<h3><span class="section-number">4.2.1. </span>Effective Hydraulic Conductivity<a class="headerlink" href="#effective-hydraulic-conductivity" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.2.1. </span>Effective Hydraulic Conductivity<a class="headerlink" href="#effective-hydraulic-conductivity" title="Permalink to this heading">#</a></h3>
 <p>It is possible to represent the spatial distribution of
 hydraulic conductivity in a heterogeneous aquifer by an <em>average</em>
 value such that steady-state groundwater discharge remains the
@@ -859,9 +551,9 @@ heterogeneous aquifer to be investigated.</p>
 </section>
 </section>
 <section id="layered-systems">
-<h2><span class="section-number">4.3. </span>Layered Systems<a class="headerlink" href="#layered-systems" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.3. </span>Layered Systems<a class="headerlink" href="#layered-systems" title="Permalink to this heading">#</a></h2>
 <section id="case-i-flow-parallel-to-layering">
-<h3><span class="section-number">4.3.1. </span>Case I - Flow Parallel to Layering<a class="headerlink" href="#case-i-flow-parallel-to-layering" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.3.1. </span>Case I - Flow Parallel to Layering<a class="headerlink" href="#case-i-flow-parallel-to-layering" title="Permalink to this heading">#</a></h3>
 <p>A confined aquifer consisting of <span class="math notranslate nohighlight">\(n\)</span> layers is considered. In the set-up (see <a class="reference internal" href="#flow-parallel"><span class="std std-numref">Fig. 4.2</span></a>), the layer boundaries are parallel to each other and groundwater flow is parallel to the layering.</p>
 <figure class="align-center" id="flow-parallel">
 <a class="reference internal image-reference" href="../../../_images/L5_f2.png"><img alt="../../../_images/L5_f2.png" src="../../../_images/L5_f2.png" style="width: 233.0px; height: 370.5px;" /></a>
@@ -907,7 +599,7 @@ K \approx \frac{\max (m_i\cdot K_i)}{m}
 \]</div>
 </section>
 <section id="example-problem">
-<h3><span class="section-number">4.3.2. </span>Example problem<a class="headerlink" href="#example-problem" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.3.2. </span>Example problem<a class="headerlink" href="#example-problem" title="Permalink to this heading">#</a></h3>
 <div class="admonition-flow-parallel-to-layering admonition">
 <p class="admonition-title">Flow parallel to layering</p>
 <p>Calculate the effective hydraulic conductivity of the layer system consisting of 3 layers if the flow is parallel to the stratification.</p>
@@ -956,11 +648,14 @@ conductivity of layer 3 5.0e-04 m/s
 The resulting hydraulic conductivity of the layer system is <span class=" -Color -Color-Bold">8.5e-03 m/s</span>.
 </pre></div>
 </div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
 </div>
 </div>
 </section>
 <section id="case-2-flow-perpendicular-to-layering">
-<h3><span class="section-number">4.3.3. </span>Case 2 - Flow Perpendicular to Layering<a class="headerlink" href="#case-2-flow-perpendicular-to-layering" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.3.3. </span>Case 2 - Flow Perpendicular to Layering<a class="headerlink" href="#case-2-flow-perpendicular-to-layering" title="Permalink to this heading">#</a></h3>
 <p>In the second case the the flow <em>perpendicular</em> to the layering is considered. Just as in the <em>parallel</em> flow case, the aquifer in this case also is a confined aquifer with <span class="math notranslate nohighlight">\(n\)</span> layers (see <a class="reference internal" href="#flow-perpendicular"><span class="std std-numref">Fig. 4.3</span></a>).</p>
 <figure class="align-center" id="flow-perpendicular">
 <a class="reference internal image-reference" href="../../../_images/L5_f3.png"><img alt="../../../_images/L5_f3.png" src="../../../_images/L5_f3.png" style="width: 211.5px; height: 364.0px;" /></a>
@@ -1009,7 +704,7 @@ K \approx \frac{m}{{\max\big(\frac{m_i}{K_i}}\big)}
 \]</div>
 </section>
 <section id="id1">
-<h3><span class="section-number">4.3.4. </span>Example problem<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.3.4. </span>Example problem<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <div class="admonition-flow-perpendicular-to-layering admonition">
 <p class="admonition-title">Flow perpendicular to layering</p>
 <p>Calculate the effective hydraulic conductivity of the layer system consisting of 3 layers if the flow is perpendicular to the layering.</p>
@@ -1060,7 +755,7 @@ The resulting hydraulic conductivity of the layer system is <span class=" -Color
 </div>
 </section>
 <section id="summary-effective-conductivity-of-layered-aquifers">
-<h3><span class="section-number">4.3.5. </span>Summary: Effective Conductivity of Layered Aquifers<a class="headerlink" href="#summary-effective-conductivity-of-layered-aquifers" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.3.5. </span>Summary: Effective Conductivity of Layered Aquifers<a class="headerlink" href="#summary-effective-conductivity-of-layered-aquifers" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>For flow parallel to layering:</strong> <br>
 Effective hydraulic conductivity equals the <em>weighted arithmetic mean</em> of layer conductivities.</p></li>
@@ -1081,7 +776,7 @@ Apart from this very special case, we have</p></li>
 </section>
 </section>
 <section id="hydraulic-resistance">
-<h2><span class="section-number">4.4. </span>Hydraulic Resistance<a class="headerlink" href="#hydraulic-resistance" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.4. </span>Hydraulic Resistance<a class="headerlink" href="#hydraulic-resistance" title="Permalink to this heading">#</a></h2>
 <p>The <em>Hydraulic Resistance</em> <span class="math notranslate nohighlight">\((R)\)</span> provide an alternative approach to express conductivity. It is defined as a reciprocal to hydraulic conductivity <span class="math notranslate nohighlight">\((K)\)</span>, i.e.,</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1104,7 +799,7 @@ highest hydraulic conductivity (smallest hydraulic resistance). In this case, th
 mean of layer conductivities. This leads to Effective hydraulic resistance equaling the weighted arithmetic mean of layer resistances.</p>
 <p>Similar to the <em>flow parallel to the layering,</em> if all layer thicknesses are identical (<span class="math notranslate nohighlight">\(m_i =\)</span> const.) and flow is perpendicular to layering, the largest hydraulic gradient is across the layer with lowest hydraulic conductivity (highest hydraulic resistance). In this case, the <em>head gradient</em> across each layer is proportional to layer resistance or inversely proportional to layer conductivity.</p>
 <section id="id2">
-<h3><span class="section-number">4.4.1. </span>Example problem<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.4.1. </span>Example problem<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
 <div class="admonition-hydraulic-resistance admonition">
 <p class="admonition-title">Hydraulic Resistance</p>
 <p>Find the hydraulic resistance with the given hydraulic counductivity</p>
@@ -1138,7 +833,7 @@ The resulting hydraulic resistance is <span class=" -Color -Color-Bold">2.0e+03 
 </section>
 </section>
 <section id="aquifer-anisotropy">
-<h2><span class="section-number">4.5. </span>Aquifer Anisotropy<a class="headerlink" href="#aquifer-anisotropy" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.5. </span>Aquifer Anisotropy<a class="headerlink" href="#aquifer-anisotropy" title="Permalink to this heading">#</a></h2>
 <p>A solid or a porous medium is <strong>isotropic</strong> if its (all) properties are independent of <em>direction.</em> Conversely, a solid or a porous medium is <strong>anisotropic</strong> if at least one of its property is dependent on direction. Thus, isotropic (or anisotropic) property of porous media refines the concept of homogeneity (or heterogeneity). The key difference being that anisotropy of aquifer is associated only with hydraulic conductivity as other aquifer properties like storativity or porosity cannot depend on direction. Groundwater flow (and more so solute transport) is affected by anisotropy. However, in unconsolidated aquifers the impact of heterogeneity is usually more important.</p>
 <p>Figure below (<a class="reference internal" href="#iso-anisotropy"><span class="std std-numref">Fig. 4.4</span></a>) explains the concept of isotropy more clearly. The direction dependency of <span class="math notranslate nohighlight">\(K\)</span> is represented by the arrows diagram.</p>
 <figure class="align-center" id="iso-anisotropy">
@@ -1148,16 +843,16 @@ The resulting hydraulic resistance is <span class=" -Color -Color-Bold">2.0e+03 
 </figcaption>
 </figure>
 <section id="anisotropy-and-scale-effects">
-<h3><span class="section-number">4.5.1. </span>Anisotropy and scale effects<a class="headerlink" href="#anisotropy-and-scale-effects" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.5.1. </span>Anisotropy and scale effects<a class="headerlink" href="#anisotropy-and-scale-effects" title="Permalink to this heading">#</a></h3>
 <p>The effective hydraulic conductivity of layered aquifers was shown earlier to depend on the orientation of the flow direction relative to layering, i.e., parallel versus perpendicular. On a larger scale, it may not be possible to identify or resolve heterogeneities associated with example thin layers, small lenses, shape and orientation of grains (see figure above). Nevertheless, <span class="math notranslate nohighlight">\(K\)</span> is found to be direction-dependent when groundwater flow is quantified at the larger scale. In these case, small-scale heterogeneity (e.g., due to layering) expresses itself as anisotropy of hydraulic conductivity at the larger scale.</p>
 </section>
 <section id="indices-and-functional-arguments-to-describe-anisotropy">
-<h3><span class="section-number">4.5.2. </span>Indices and functional arguments to describe anisotropy<a class="headerlink" href="#indices-and-functional-arguments-to-describe-anisotropy" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.5.2. </span>Indices and functional arguments to describe anisotropy<a class="headerlink" href="#indices-and-functional-arguments-to-describe-anisotropy" title="Permalink to this heading">#</a></h3>
 <p>One could consider heterogeneity as a property of entirety. While function arguments point towards heterogeneity, <em>indices</em> are
 used to express that hydraulic conductivity depends on direction. Considering a 3-D Cartesian coordinate system, the directional dependent hydraulic conductivity can be represented by <span class="math notranslate nohighlight">\(K_x\)</span>, <span class="math notranslate nohighlight">\(K_y\)</span> and <span class="math notranslate nohighlight">\(K_z\)</span> in parallel with the <span class="math notranslate nohighlight">\(x-\)</span>, <span class="math notranslate nohighlight">\(y-\)</span> and <span class="math notranslate nohighlight">\(z-\)</span>axis, respectively. Within these, one could distinguish between horizontal conductivities (<span class="math notranslate nohighlight">\(K_x\)</span> and <span class="math notranslate nohighlight">\(K_y\)</span>) with the vertical conductivity <span class="math notranslate nohighlight">\(K_z\)</span>. More often, anisotropy is observed only between horizontal and vertical directions (i.e., along <span class="math notranslate nohighlight">\(x\)</span> or <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> directions), while isotropy is observed along horizontal directions (<span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> direction). Thus, symbols <span class="math notranslate nohighlight">\(K_h\)</span> representing <span class="math notranslate nohighlight">\(K_x = K_y\)</span> and <span class="math notranslate nohighlight">\(K_v\)</span> representing <span class="math notranslate nohighlight">\(K_z\)</span> can be used to denote horizontal and vertical hydraulic conductivity, respectively.</p>
 </section>
 <section id="concept-of-the-hydraulic-conductivity-ellipse">
-<h3><span class="section-number">4.5.3. </span>Concept of the hydraulic conductivity ellipse<a class="headerlink" href="#concept-of-the-hydraulic-conductivity-ellipse" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.5.3. </span>Concept of the hydraulic conductivity ellipse<a class="headerlink" href="#concept-of-the-hydraulic-conductivity-ellipse" title="Permalink to this heading">#</a></h3>
 <p>Let us consider an aquifer with horizontal conductivity <span class="math notranslate nohighlight">\(K_h\)</span> and vertical hydraulic conductivity <span class="math notranslate nohighlight">\(K_v\)</span>. Let us assume that the flow in the aquifer is in some arbitrary direction characterized by the angle <span class="math notranslate nohighlight">\(\theta\)</span> between the flow direction and horizontal plane (see <a class="reference internal" href="#k-ellipse"><span class="std std-numref">Fig. 4.5</span></a>).</p>
 <figure class="align-center" id="k-ellipse">
 <a class="reference internal image-reference" href="../../../_images/L5_f5.png"><img alt="../../../_images/L5_f5.png" src="../../../_images/L5_f5.png" style="width: 469.70000000000005px; height: 249.15000000000003px;" /></a>
@@ -1173,7 +868,7 @@ K = \frac{1}{\frac{\cos^2\theta}{K_h}+\frac{\sin^2\theta}{K_v}}
 <p>If the angle <span class="math notranslate nohighlight">\(\theta\)</span> is varied, the above equation defines an ellipse (also called “hydraulic conductivity ellipse”) with semi-axes equal to <span class="math notranslate nohighlight">\(\surd{K_h}\)</span> and <span class="math notranslate nohighlight">\(\surd{K_v}\)</span>, respectively. The square root of <span class="math notranslate nohighlight">\(K\)</span> can be visualised by the length of a line segment parallel to the direction of flow. This line segment extends from the centre to the perimeter of the ellipse.</p>
 </section>
 <section id="id3">
-<h3><span class="section-number">4.5.4. </span>Example problem<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.5.4. </span>Example problem<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
 <div class="admonition-hydraulic-resistance admonition">
 <p class="admonition-title">Hydraulic Resistance</p>
 <p>Find resulting hydraulic conductivity from provided horizontal and vertical conductivities.</p>
@@ -1210,7 +905,7 @@ The resulting hydraulic conductivity is <span class=" -Color -Color-Bold">6.2e-0
 </section>
 </section>
 <section id="combining-heterogeneity-and-anisotropy">
-<h2><span class="section-number">4.6. </span>Combining Heterogeneity and Anisotropy<a class="headerlink" href="#combining-heterogeneity-and-anisotropy" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.6. </span>Combining Heterogeneity and Anisotropy<a class="headerlink" href="#combining-heterogeneity-and-anisotropy" title="Permalink to this heading">#</a></h2>
 <p>The distinction between_Homogeneous, Heterogeneous, isotropic and anisotropic aquifer or any combination of them can be more clearly understood from the figure (for vertical <span class="math notranslate nohighlight">\(x-z\)</span> plane).</p>
 <figure class="align-center" id="het-aniso">
 <a class="reference internal image-reference" href="../../../_images/L5_f6.png"><img alt="../../../_images/L5_f6.png" src="../../../_images/L5_f6.png" style="width: 705.6500000000001px; height: 523.0500000000001px;" /></a>
@@ -1219,21 +914,40 @@ The resulting hydraulic conductivity is <span class=" -Color -Color-Bold">6.2e-0
 </figcaption>
 </figure>
 </section>
+<section id="additional-material">
+<h2><span class="section-number">4.7. </span>Additional Material<a class="headerlink" href="#additional-material" title="Permalink to this heading">#</a></h2>
+<div class="toggle docutils container">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSV04S9lhhZF2brpVIleI_UJYLVbrErYTtzE_XAY97ypV4QsGUpzkqxJ0BB3AZhpA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+</section>
 <section id="chapter-quiz">
-<h2><span class="section-number">4.7. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.8. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input tag_hide-output docutils container">
+<details class="hide above-output">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell outputs</span>
+<span class="expanded">Hide code cell outputs</span>
+</summary>
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="hdOPxMpVHkgZ" data-shufflequestions="False"
+<div class="output text_html"><div id="DMdrPDpAWmss" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
-               data-numquestions="1000000"> <style>:root {
-    --medium-slate-blue: #6f78ffff;
-    --orange-pantone: #f75c03ff;
-    --russian-violet: #392061ff;
-    --maximum-yellow-red: #ffc857ff;
-    --viridian-green: #119da4ff;
-    --incorrect-red: #c80202;
-    --correct-green: #009113;
+               data-numquestions="1000000"
+               data-maxwidth="600"
+               style="border-radius: 10px; text-align: left"> <style>
+#DMdrPDpAWmss {
+   --jq-multiple-choice-bg: #6f78ffff;
+   --jq-mc-button-bg: #fafafa;
+   --jq-mc-button-border: #e0e0e0e0;
+   --jq-mc-button-inset-shadow: #555555;
+   --jq-many-choice-bg: #f75c03ff;
+   --jq-numeric-bg: #392061ff;
+   --jq-numeric-input-bg: #c0c0c0;
+   --jq-numeric-input-label: #101010;
+   --jq-numeric-input-shadow: #999999;
+   --jq-incorrect-color: #c80202;
+   --jq-correct-color: #009113;
+   --jq-text-color: #fafafa;
 }
 
 .Quiz {
@@ -1246,6 +960,7 @@ The resulting hydraulic conductivity is <span class=" -Color -Color-Bold">6.2e-0
     padding-top: 4px;
     line-height: 1.1;
     font-size: 16pt;
+    border-radius: inherit;
 }
 
 .QuizCode {
@@ -1262,8 +977,9 @@ The resulting hydraulic conductivity is <span class=" -Color -Color-Bold">6.2e-0
 .Answer {
     margin: 10px 0;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+    border-radius: inherit;
 }
 
 .Feedback {
@@ -1282,8 +998,8 @@ The resulting hydraulic conductivity is <span class=" -Color -Color-Bold">6.2e-0
     margin: 10px;
     color: inherit;
     width: 140px;
-    background-color: #c0c0c0;
-    color: #fff;
+    background-color: var(--jq-numeric-input-bg);
+    color: var(--jq-text-color);
     padding: 5px;
     padding-left: 10px;
     font-family: inherit;
@@ -1297,18 +1013,21 @@ The resulting hydraulic conductivity is <span class=" -Color -Color-Bold">6.2e-0
 
 .Input-text:focus {
     outline: none;
-    background-color: #c0c0c0;
-    box-shadow: 0.6rem 0.8rem 1.4rem -0.5rem #999999;
+    background-color: var(--jq-numeric-input-bg);
+    box-shadow: 0.6rem 0.8rem 1.4rem -0.5rem var(--jq-numeric-input-shadow);
 }
 
 .MCButton {
-    background: #fafafa;
-    border: 1px solid #eee;
-    border-radius: 10px;
+    background: var(--jq-mc-button-bg);
+    border: 1px solid var(--jq-mc-button-border);
+    border-radius: inherit;
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .MCButton p {
@@ -1317,23 +1036,23 @@ The resulting hydraulic conductivity is <span class=" -Color -Color-Bold">6.2e-0
 
 .MultipleChoiceQn {
     padding: 10px;
-    background: var(--medium-slate-blue);
-    color: #fafafa;
-    border-radius: 10px;
+    background: var(--jq-multiple-choice-bg);
+    color: var(--jq-text-color);
+    border-radius: inherit;
 }
 
 .ManyChoiceQn {
     padding: 10px;
-    background: var(--orange-pantone);
-    color: #fafafa;
-    border-radius: 10px;
+    background: var(--jq-many-choice-bg);
+    color: var(--jq-text-color);
+    border-radius: inherit;
 }
 
 .NumericQn {
     padding: 10px;
-    background: var(--russian-violet);
-    color: #fafafa;
-    border-radius: 10px;
+    background: var(--jq-numeric-bg);
+    color: var(--jq-text-color);
+    border-radius: inherit;
 }
 
 .NumericQn p {
@@ -1344,48 +1063,49 @@ The resulting hydraulic conductivity is <span class=" -Color -Color-Bold">6.2e-0
     line-height: 34px;
     float: left;
     margin-right: 10px;
-    color: #101010;
+    color: var(--jq-numeric-input-label);
     font-size: 15pt;
 }
 
 .incorrect {
-    color: var(--incorrect-red);
+    color: var(--jq-incorrect-color);
 }
 
 .correct {
-    color: var(--correct-green);
+    color: var(--jq-correct-color);
 }
 
 .correctButton {
     /*
-    background: var(--correct-green);
+    background: var(--jq-correct-color);
    */
     animation: correct-anim 0.6s ease;
     animation-fill-mode: forwards;
-    color: #fafafa;
-    box-shadow: inset 0px 0px 5px #555555;
+    color: var(--jq-text-color);
+    box-shadow: inset 0px 0px 5px var(--jq-mc-button-inset-shadow);
     outline: none;
 }
 
 .incorrectButton {
     animation: incorrect-anim 0.8s ease;
     animation-fill-mode: forwards;
-    color: #fafafa;
-    box-shadow: inset 0px 0px 5px #555555;
+    color: var(--jq-text-color);
+    box-shadow: inset 0px 0px 5px var(--jq-mc-button-inset-shadow);
     outline: none;
 }
 
 @keyframes incorrect-anim {
     100% {
-        background-color: var(--incorrect-red);
+        background-color: var(--jq-incorrect-color);
     }
 }
 
 @keyframes correct-anim {
     100% {
-        background-color: var(--correct-green);
+        background-color: var(--jq-correct-color);
     }
-}</style></div><script type="application/javascript">var questionshdOPxMpVHkgZ=[{"question": "Which aquifer property is NOT direction dependent?", "type": "multiple_choice", "answers": [{"answer": "Porosity", "correct": false, "feedback": "Incorrect."}, {"answer": "Storage Coefficient", "correct": false, "feedback": "Incorrect"}, {"answer": "Hydraulic head", "correct": true, "feedback": "Correct."}, {"answer": "Conductivity", "correct": false, "feedback": "Incorrect."}]}, {"question": "In equation $K = K(x,y,z)$ if $K_x = K_y = K_z$, then the aquifer is ", "type": "multiple_choice", "answers": [{"answer": "Homogeneous", "correct": true, "feedback": "Correct."}, {"answer": "Heterogeneous", "correct": false, "feedback": "Incorrect"}, {"answer": "Can be both Homogeneous and Heterogeneous", "correct": false, "feedback": "Incorrect."}, {"answer": "Neither Homogeneous not Heterogeneous", "correct": false, "feedback": "Incorrect"}]}, {"question": "Effective Hydraulic Conductivity represents", "type": "many_choice", "answers": [{"answer": "The maximum conductivity along horizontal flow direction", "correct": false, "feedback": "Incorrect."}, {"answer": "The maximum conductivity along vertical flow direction", "correct": false, "feedback": "Incorrect."}, {"answer": "The average K value in the layered aquifer", "correct": true, "feedback": "Correct."}, {"answer": "Is equivalent to hydraulic resistance", "correct": false, "feedback": "Incorrect."}]}, {"question": "In flow parallel to layering, the effective $K$", "type": "multiple_choice", "answers": [{"answer": "Equals the weighted harmonic mean of layer conductivities.", "correct": false, "feedback": "Incorrect."}, {"answer": "Equals the weighted arithmetic mean of layer conductivities.", "correct": true, "feedback": "correct."}, {"answer": "Is not dependent on the direction of flow", "correct": false, "feedback": "Incorrect."}, {"answer": "Depends on arithmetic and harmonic mean", "correct": false, "feedback": "Incorrect."}]}, {"question": "Hydraulic resistance ($R$) and effective conductivity $K_{eff}$ are ", "type": "multiple_choice", "answers": [{"answer": "Independent to each other", "correct": false, "feedback": "Incorrect."}, {"answer": "Related with other through the Darcy velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Are related to storage coefficient. ", "correct": false, "feedback": "Incorrect."}, {"answer": "Are reciprocal to each other", "correct": true, "feedback": "Correct"}]}, {"question": "Effective Hydraulic Conductivty in flow parallel to layers can be estimated from the relation: $K$ = $\\frac{\\sum_{i=1}^n m_iK_i}{m}$", "type": "multiple_choice", "answers": [{"answer": "As the largest K value among the layer", "correct": true, "feedback": "Correct."}, {"answer": "As the lowest K value among the layer", "correct": false, "feedback": "Incorrect."}, {"answer": "As the reciprocal of the largest K value among the layer", "correct": false, "feedback": "Incorrect."}, {"answer": "As a ratio of largest and lowest K value among the layer", "correct": false, "feedback": "Incorrect"}]}, {"question": "Anisotropy relates the aquifer properties with", "type": "multiple_choice", "answers": [{"answer": "the spatial dimension of the aquifer", "correct": false, "feedback": "Inorrect."}, {"answer": "their dependence on direction", "correct": false, "feedback": "Incorrect."}, {"answer": "their independence to spatial and direction ", "correct": true, "feedback": "Correct."}, {"answer": "None of the above", "correct": false, "feedback": "Incorrect."}]}, {"question": "The relation $K = \\frac{1}{\\frac{\\cos^2\\theta}{K_h}+\\frac{\\sin^2\\theta}{K_v}}$ represents ", "type": "multiple_choice", "answers": [{"answer": "Effective hydraulic conductivity when flow is vertical to aquifer layers", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective hydraulic conductivity when flow is horizontal to aquifer layers", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective hydraulic conductivity when flow is tangential to aquifer layers", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective hydraulic conductivity when flow is in arbitrary direction to aquifer layers", "correct": true, "feedback": "Correct"}]}];
+}
+</style></div><script type="application/javascript">var questionsDMdrPDpAWmss=[{"question": "Which aquifer property is NOT direction dependent?", "type": "multiple_choice", "answers": [{"answer": "Porosity", "correct": false, "feedback": "Incorrect."}, {"answer": "Storage Coefficient", "correct": false, "feedback": "Incorrect"}, {"answer": "Hydraulic head", "correct": true, "feedback": "Correct."}, {"answer": "Conductivity", "correct": false, "feedback": "Incorrect."}]}, {"question": "In equation $K = K(x,y,z)$ if $K_x = K_y = K_z$, then the aquifer is ", "type": "multiple_choice", "answers": [{"answer": "Homogeneous", "correct": true, "feedback": "Correct."}, {"answer": "Heterogeneous", "correct": false, "feedback": "Incorrect"}, {"answer": "Can be both Homogeneous and Heterogeneous", "correct": false, "feedback": "Incorrect."}, {"answer": "Neither Homogeneous not Heterogeneous", "correct": false, "feedback": "Incorrect"}]}, {"question": "Effective Hydraulic Conductivity represents", "type": "many_choice", "answers": [{"answer": "The maximum conductivity along horizontal flow direction", "correct": false, "feedback": "Incorrect."}, {"answer": "The maximum conductivity along vertical flow direction", "correct": false, "feedback": "Incorrect."}, {"answer": "The average K value in the layered aquifer", "correct": true, "feedback": "Correct."}, {"answer": "Is equivalent to hydraulic resistance", "correct": false, "feedback": "Incorrect."}]}, {"question": "In flow parallel to layering, the effective $K$", "type": "multiple_choice", "answers": [{"answer": "Equals the weighted harmonic mean of layer conductivities.", "correct": false, "feedback": "Incorrect."}, {"answer": "Equals the weighted arithmetic mean of layer conductivities.", "correct": true, "feedback": "correct."}, {"answer": "Is not dependent on the direction of flow", "correct": false, "feedback": "Incorrect."}, {"answer": "Depends on arithmetic and harmonic mean", "correct": false, "feedback": "Incorrect."}]}, {"question": "Hydraulic resistance ($R$) and effective conductivity $K_{eff}$ are ", "type": "multiple_choice", "answers": [{"answer": "Independent to each other", "correct": false, "feedback": "Incorrect."}, {"answer": "Related with other through the Darcy velocity", "correct": false, "feedback": "Incorrect."}, {"answer": "Are related to storage coefficient. ", "correct": false, "feedback": "Incorrect."}, {"answer": "Are reciprocal to each other", "correct": true, "feedback": "Correct"}]}, {"question": "Effective Hydraulic Conductivty in flow parallel to layers can be estimated from the relation: $K$ = $\\frac{\\sum_{i=1}^n m_iK_i}{m}$", "type": "multiple_choice", "answers": [{"answer": "As the largest K value among the layer", "correct": true, "feedback": "Correct."}, {"answer": "As the lowest K value among the layer", "correct": false, "feedback": "Incorrect."}, {"answer": "As the reciprocal of the largest K value among the layer", "correct": false, "feedback": "Incorrect."}, {"answer": "As a ratio of largest and lowest K value among the layer", "correct": false, "feedback": "Incorrect"}]}, {"question": "Anisotropy relates the aquifer properties with", "type": "multiple_choice", "answers": [{"answer": "the spatial dimension of the aquifer", "correct": false, "feedback": "Inorrect."}, {"answer": "their dependence on direction", "correct": false, "feedback": "Incorrect."}, {"answer": "their independence to spatial and direction ", "correct": true, "feedback": "Correct."}, {"answer": "None of the above", "correct": false, "feedback": "Incorrect."}]}, {"question": "The relation $K = \\frac{1}{\\frac{\\cos^2\\theta}{K_h}+\\frac{\\sin^2\\theta}{K_v}}$ represents ", "type": "multiple_choice", "answers": [{"answer": "Effective hydraulic conductivity when flow is vertical to aquifer layers", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective hydraulic conductivity when flow is horizontal to aquifer layers", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective hydraulic conductivity when flow is tangential to aquifer layers", "correct": false, "feedback": "Incorrect."}, {"answer": "Effective hydraulic conductivity when flow is in arbitrary direction to aquifer layers", "correct": true, "feedback": "Correct"}]}];
     // Make a random ID
 function makeid(length) {
     var result = [];
@@ -1741,7 +1461,11 @@ function check_numeric(ths, event) {
             // if (answer.type=="value"){
             if ('value' in answer) {
                 if (submission == answer.value) {
-                    fb.textContent = jaxify(answer.feedback);
+                    if ("feedback" in answer) {
+                        fb.textContent = jaxify(answer.feedback);
+                    } else {
+                        fb.textContent = jaxify("Correct");
+                    }
                     correct = answer.correct;
                     //console.log(answer.correct);
                     done = true;
@@ -1982,6 +1706,7 @@ function show_questions(json, mydiv) {
     var shuffle_questions = mydiv.dataset.shufflequestions;
     var num_questions = mydiv.dataset.numquestions;
     var shuffle_answers = mydiv.dataset.shuffleanswers;
+    var max_width = mydiv.dataset.maxwidth;
 
     if (num_questions > json.length) {
         num_questions = json.length;
@@ -2011,21 +1736,23 @@ function show_questions(json, mydiv) {
         iDiv.id = 'quizWrap' + id;
         iDiv.className = 'Quiz';
         iDiv.setAttribute('data-qnum', index);
+        iDiv.style.maxWidth  =max_width+"px";
         mydiv.appendChild(iDiv);
         // iDiv.innerHTML=qa.question;
-
+        
         var outerqDiv = document.createElement('div');
         outerqDiv.id = "OuterquizQn" + id + index;
-
-        iDiv.append(outerqDiv);
-
         // Create div to contain question part
         var qDiv = document.createElement('div');
         qDiv.id = "quizQn" + id + index;
-        //qDiv.textContent=qa.question;
-        qDiv.innerHTML = jaxify(qa.question);
+        
+        if (qa.question) {
+            iDiv.append(outerqDiv);
 
-        outerqDiv.append(qDiv);
+            //qDiv.textContent=qa.question;
+            qDiv.innerHTML = jaxify(qa.question);
+            outerqDiv.append(qDiv);
+        }
 
         // Create div for code inside question
         var codeDiv;
@@ -2052,10 +1779,12 @@ function show_questions(json, mydiv) {
         //console.log(qa.type);
 
         var num_correct;
-        if (qa.type == "multiple_choice") {
+        if ((qa.type == "multiple_choice") || (qa.type == "many_choice") ) {
             num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
-        } else if (qa.type == "many_choice") {
-            num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
+            if ("answer_cols" in qa) {
+                //aDiv.style.gridTemplateColumns = 'auto '.repeat(qa.answer_cols);
+                aDiv.style.gridTemplateColumns = 'repeat(' + qa.answer_cols + ', 1fr)';
+            }
         } else if (qa.type == "numeric") {
             //console.log("numeric");
             make_numeric(qa, outerqDiv, qDiv, aDiv, id);
@@ -2117,11 +1846,31 @@ if (typeof version == 'undefined') {
     }
     return false;
 }
+/* This is to handle asynchrony issues in loading Jupyter notebooks
+           where the quiz has been previously run. The Javascript was generally
+           being run before the div was added to the DOM. I tried to do this
+           more elegantly using Mutation Observer, but I didn't get it to work.
 
+           Someone more knowledgeable could make this better ;-) */
+
+        function try_show() {
+          if(document.getElementById("DMdrPDpAWmss")) {
+            show_questions(questionsDMdrPDpAWmss,  DMdrPDpAWmss); 
+          } else {
+             setTimeout(try_show, 200);
+          }
+        };
+    
         {
-        show_questions(questionshdOPxMpVHkgZ,  hdOPxMpVHkgZ);
+        // console.log(element);
+
+        //console.log("DMdrPDpAWmss");
+        // console.log(document.getElementById("DMdrPDpAWmss"));
+
+        try_show();
         }
         </script></div>
+</details>
 </div>
 </section>
 </section>
@@ -2130,15 +1879,15 @@ if (typeof version == 'undefined') {
     {
         requestKernel: true,
         binderOptions: {
-            repo: "iGW-TU-Dresden/iGW_Book",
-            ref: "main",
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
         },
         codeMirrorConfig: {
             theme: "abcdef",
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./content\flow\L5"
         },
         predefinedOutput: true
@@ -2146,56 +1895,133 @@ if (typeof version == 'undefined') {
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../L4/14_darcy_law_K.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">3. </span>Darcy’s Law and Conductivity</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../L4/14_darcy_law_K.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Darcy’s Law and Conductivity</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="../L6/16_darcy_law_3D.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="../L6/16_darcy_law_3D.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title"><span class="section-number">5. </span>Steady-State Groundwater flow in 3D</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">4.1. Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#heterogeneity">4.2. Heterogeneity</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effective-hydraulic-conductivity">4.2.1. Effective Hydraulic Conductivity</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#layered-systems">4.3. Layered Systems</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-i-flow-parallel-to-layering">4.3.1. Case I - Flow Parallel to Layering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem">4.3.2. Example problem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#case-2-flow-perpendicular-to-layering">4.3.3. Case 2 - Flow Perpendicular to Layering</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4.3.4. Example problem</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-effective-conductivity-of-layered-aquifers">4.3.5. Summary: Effective Conductivity of Layered Aquifers</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hydraulic-resistance">4.4. Hydraulic Resistance</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">4.4.1. Example problem</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aquifer-anisotropy">4.5. Aquifer Anisotropy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#anisotropy-and-scale-effects">4.5.1. Anisotropy and scale effects</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#indices-and-functional-arguments-to-describe-anisotropy">4.5.2. Indices and functional arguments to describe anisotropy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#concept-of-the-hydraulic-conductivity-ellipse">4.5.3. Concept of the hydraulic conductivity ellipse</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4.5.4. Example problem</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#combining-heterogeneity-and-anisotropy">4.6. Combining Heterogeneity and Anisotropy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-material">4.7. Additional Material</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chapter-quiz">4.8. Chapter Quiz</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By Dr Prabhas K. Yadav<br/>
+  <div class="footer-item">
+    
+<p class="component-author">
+By Institute of Groud Water -TU Dresden
+</p>
+
+  </div>
   
-      &copy; Copyright 2022.<br/>
-    <div class="extra_footer">
-      <div>
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
  All content on this site (unless otherwise specified) is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY-NC-SA 4.0 license</a>
 </div>
 
-    </div>
-</p>
-        </footer>
-    </div>
-    
 </div>
+  </div>
+  
+</div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
