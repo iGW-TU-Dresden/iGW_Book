@@ -17,7 +17,7 @@ url: "https://github.com/iGW-TU-Dresden/iGW_Book" # the base hostname & protocol
 
 #######################################################################################
 # Book settings
-title                       : Groundwater I  # The title of the book. Will be placed in the left navbar.
+title                       : Groundwater  # The title of the book. Will be placed in the left navbar.
 author                      : Institute of Groud Water -TU Dresden # The author of the book
 #copyright                   : ""  # Copyright year to be placed in the footer
 logo                        : logo.jpg  # A path to the book logo
@@ -69,8 +69,8 @@ html_css_files: ["custom.css"]
 # Launch button settings
 launch_buttons:
   notebook_interface        : classic  # The interface interactive links will activate ["classic", "jupyterlab"]
-  binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
-  jupyterhub_url           : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
+  #binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
+  #jupyterhub_url           : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
   thebe                     : true  # Add a thebelab button to pages (requires the repository to run on Binder)
   colab_url                 : https://colab.research.google.com
 
