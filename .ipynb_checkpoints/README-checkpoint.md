@@ -1,7 +1,8 @@
+# [iGW_Book](https://igw-tu-dresden.github.io/iGW_Book/intro.html)
 ## The `Interactive` Groundwater-I Book
 
 
-The site provides an interactive JUPYTER-notebook based book with contents typical of an _introductory_ groundwater course taught at higher UG level or the early PG level at universities. 
+The [site](https://igw-tu-dresden.github.io/iGW_Book/intro.html) provides an interactive JUPYTER-notebook based book with contents typical of an _introductory_ groundwater course taught at higher UG level or the early PG level at universities. 
 
 The contents/structure provided here are mostly from those developed and lectured by **Prof. Rudolf Liedl** at [TU Dresden](https://tu-dresden.de/). 
 
@@ -49,3 +50,4 @@ This work is partly supported by:
 [Multimediafonds, TU-Dresden]: https://tu-dresden.de/tu-dresden/organisation/rektorat/prorektor-bildung-und-internationales/zill/e-learning/multimediafonds
 
 [DFG]: https://www.dfg.de/
+

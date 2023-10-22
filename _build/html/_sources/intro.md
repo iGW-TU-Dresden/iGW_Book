@@ -16,7 +16,7 @@ The _lecture_ parts are combination of **texts** and **simpler** numerical examp
 The _tutorial_ are mostly **numerical** examples. This aims at teaching also the basic of `Python` coding. The focus remains on illustrating lecture contents. _Self-learning tools_ are interactive tools that supports the lecture and tutorial components and enhances understanding. The codes of these _tools_ may require higher knowledge of `Python` programming and therefore they are not to be mastered as part of the course.
 
 All codes and contents provided in this interactive book are licensed under [Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/) 
-Codes are available at this [GitHUB repository](https://github.com/prabhasyadav/iGW-I)
+Codes are available at this [GitHUB repository](https://github.com/iGW-TU-Dresden/iGW_Book)
 
 
 > **The development of the book is based on the **wonderful** works of the [JUPYTER Book Team](https://jupyterbook.org/intro.html)**
