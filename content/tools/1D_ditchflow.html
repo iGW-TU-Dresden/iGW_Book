@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>9. Simulating 1D Trench Flow &#8212; Groundwater</title>
+    <title>10. Simulating 1D Trench Flow &#8212; Groundwater</title>
   
   
   
@@ -87,7 +87,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="1. Groundwater Exam Solution - 2019-2020" href="../Q_and_A/GW_exam_2019_20.html" />
-    <link rel="prev" title="8. Simulating Kinetics and Degradation" href="Kinetics_degradation.html" />
+    <link rel="prev" title="9. Simulating Kinetics and Degradation" href="Kinetics_degradation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -228,13 +228,14 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="decay.html">1. Simulating Mass Budget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sieve_analysis.html">2. Simulating Seive Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="effective_K.html">3. Simulating Effective hydraulic conductivity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="uniform_flow_and_well.html">4. Uniform Flow and Well</a></li>
-<li class="toctree-l1"><a class="reference internal" href="aniso2D.html">5. Simulating the Anisotropy and flow direction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="type_curve_fit.html">6. Type curve and fitting pumping data tool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1D_advection_dispersion.html">7. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Kinetics_degradation.html">8. Simulating Kinetics and Degradation</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">9. Simulating 1D Trench Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Darcy_Grad.html">3. Hydraulic Gradient visualised using Darcy Law##</a></li>
+<li class="toctree-l1"><a class="reference internal" href="effective_K.html">4. Simulating Effective hydraulic conductivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniform_flow_and_well.html">5. Uniform Flow and Well</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aniso2D.html">6. Simulating the Anisotropy and flow direction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type_curve_fit.html">7. Type curve and fitting pumping data tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1D_advection_dispersion.html">8. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Kinetics_degradation.html">9. Simulating Kinetics and Degradation</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">10. Simulating 1D Trench Flow</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Previous Years Q&amp;A</span></p>
 <ul class="nav bd-sidenav">
@@ -481,8 +482,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-and-equation">9.1. Scenario and Equation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-tool">9.1.1. How to use this tool</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-and-equation">10.1. Scenario and Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-tool">10.1.1. How to use this tool</a></li>
 </ul>
 </li>
 </ul>
@@ -497,15 +498,15 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="simulating-1d-trench-flow">
-<h1><span class="section-number">9. </span>Simulating 1D Trench Flow<a class="headerlink" href="#simulating-1d-trench-flow" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">10. </span>Simulating 1D Trench Flow<a class="headerlink" href="#simulating-1d-trench-flow" title="Permalink to this heading">#</a></h1>
 <p>The tool simulates the effect on the water table due to model parameters.</p>
 <p><strong><em>Contributed by Ms. Anne Pförtner and Sophie Pförtner. The original concept from Prof. R. Liedl spreasheet code.</em></strong></p>
 <section id="scenario-and-equation">
-<h2><span class="section-number">9.1. </span>Scenario and Equation<a class="headerlink" href="#scenario-and-equation" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.1. </span>Scenario and Equation<a class="headerlink" href="#scenario-and-equation" title="Permalink to this heading">#</a></h2>
 <figure class="align-center" id="ditch">
 <a class="reference internal image-reference" href="../../_images/M11_f41.png"><img alt="../../_images/M11_f41.png" src="../../_images/M11_f41.png" style="width: 456.40000000000003px; height: 172.60000000000002px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 9.1 </span><span class="caption-text">Conceptual model of a flow between two water bodies separated by unconfined aquifer</span><a class="headerlink" href="#ditch" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 10.1 </span><span class="caption-text">Conceptual model of a flow between two water bodies separated by unconfined aquifer</span><a class="headerlink" href="#ditch" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>You can calculate the steady flow in an unconfined aquifer with this Equations<sup><a class="footnote-reference brackets" href="#fetter2017" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></sup> :</p>
@@ -523,7 +524,7 @@ document.write(`
 <span class="math notranslate nohighlight">\(K\)</span> = hydraulic conductivity <span class="math notranslate nohighlight">\([m/s]\)</span>,
 <span class="math notranslate nohighlight">\(R\)</span> = recharge rate <span class="math notranslate nohighlight">\([m/s]\)</span></p>
 <section id="how-to-use-this-tool">
-<h3><span class="section-number">9.1.1. </span>How to use this tool<a class="headerlink" href="#how-to-use-this-tool" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">10.1.1. </span>How to use this tool<a class="headerlink" href="#how-to-use-this-tool" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Go to the Binder by clicking the rocket button (top-right of the page)</p></li>
 <li><p>Execute the code cell with libraries and the code cell</p></li>
@@ -625,7 +626,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">8. </span>Simulating Kinetics and Degradation</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Simulating Kinetics and Degradation</p>
       </div>
     </a>
     <a class="right-next"
@@ -652,8 +653,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-and-equation">9.1. Scenario and Equation</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-tool">9.1.1. How to use this tool</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-and-equation">10.1. Scenario and Equation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-this-tool">10.1.1. How to use this tool</a></li>
 </ul>
 </li>
 </ul>
