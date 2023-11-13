@@ -49,6 +49,7 @@ parts:
   - file: content/tools/sieve_analysis
   - file: content/tools/Darcy_Grad
   - file: content/tools/effective_K
+  - file: content/tools/GW_Vel
   - file: content/tools/uniform_flow_and_well
   - file: content/tools/aniso2D
   - file: content/tools/type_curve_fit
