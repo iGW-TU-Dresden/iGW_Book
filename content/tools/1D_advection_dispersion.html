@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>8. Tool for simulating 1D Conservative Transport (Laboratory Column) &#8212; Groundwater</title>
+    <title>9. Tool for simulating 1D Conservative Transport (Laboratory Column) &#8212; Groundwater</title>
   
   
   
@@ -84,8 +84,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/logo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="9. Simulating Kinetics and Degradation" href="Kinetics_degradation.html" />
-    <link rel="prev" title="7. Type curve and fitting pumping data tool" href="type_curve_fit.html" />
+    <link rel="next" title="10. Simulating Kinetics and Degradation" href="Kinetics_degradation.html" />
+    <link rel="prev" title="8. Type curve and fitting pumping data tool" href="type_curve_fit.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -226,14 +226,15 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="decay.html">1. Simulating Mass Budget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sieve_analysis.html">2. Simulating Seive Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Darcy_Grad.html">3. Hydraulic Gradient visualised using Darcy Law##</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Darcy_Grad.html">3. Hydraulic Gradient visualised using Darcy Law</a></li>
 <li class="toctree-l1"><a class="reference internal" href="effective_K.html">4. Simulating Effective hydraulic conductivity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="uniform_flow_and_well.html">5. Uniform Flow and Well</a></li>
-<li class="toctree-l1"><a class="reference internal" href="aniso2D.html">6. Simulating the Anisotropy and flow direction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="type_curve_fit.html">7. Type curve and fitting pumping data tool</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Kinetics_degradation.html">9. Simulating Kinetics and Degradation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1D_ditchflow.html">10. Simulating 1D Trench Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GW_Vel.html">5. Ground Water Velocity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniform_flow_and_well.html">6. Uniform Flow and Well</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aniso2D.html">7. Simulating the Anisotropy and flow direction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type_curve_fit.html">8. Type curve and fitting pumping data tool</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">9. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Kinetics_degradation.html">10. Simulating Kinetics and Degradation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1D_ditchflow.html">11. Simulating 1D Trench Flow</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Previous Years Q&amp;A</span></p>
 <ul class="nav bd-sidenav">
@@ -480,11 +481,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#info-on-the-tool">8.1. Info on the tool</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-libraries-cell">8.1.1. Python <code class="docutils literal notranslate"><span class="pre">Libraries</span></code> Cell</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#input-data-cell">8.1.2. <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Data</span></code> Cell</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-main-function-cell">8.1.3. The <strong>main</strong> <code class="docutils literal notranslate"><span class="pre">function</span></code> cell</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-interactive-cell">8.1.4. The <code class="docutils literal notranslate"><span class="pre">Interactive</span></code> cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#info-on-the-tool">9.1. Info on the tool</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-libraries-cell">9.1.1. Python <code class="docutils literal notranslate"><span class="pre">Libraries</span></code> Cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#input-data-cell">9.1.2. <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Data</span></code> Cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-main-function-cell">9.1.3. The <strong>main</strong> <code class="docutils literal notranslate"><span class="pre">function</span></code> cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-interactive-cell">9.1.4. The <code class="docutils literal notranslate"><span class="pre">Interactive</span></code> cell</a></li>
 </ul>
 </li>
 </ul>
@@ -499,10 +500,10 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="tool-for-simulating-1d-conservative-transport-laboratory-column">
-<h1><span class="section-number">8. </span>Tool for simulating 1D Conservative Transport (Laboratory Column)<a class="headerlink" href="#tool-for-simulating-1d-conservative-transport-laboratory-column" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">9. </span>Tool for simulating 1D Conservative Transport (Laboratory Column)<a class="headerlink" href="#tool-for-simulating-1d-conservative-transport-laboratory-column" title="Permalink to this heading">#</a></h1>
 <p><strong><em>Contributed by Ms. Anne Pförtner and Sophie Pförtner. The original concept from Prof. R. Liedl spreasheet code.</em></strong></p>
 <section id="info-on-the-tool">
-<h2><span class="section-number">8.1. </span>Info on the tool<a class="headerlink" href="#info-on-the-tool" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">9.1. </span>Info on the tool<a class="headerlink" href="#info-on-the-tool" title="Permalink to this heading">#</a></h2>
 <p>The worksheet addresses <strong>1D conservative transport</strong> of a solute through a porous medium, e.g. in a laboratory column. <br>
 Water flow through the porous medium is assumed to be steady-state. <br>
 <strong>Advection</strong> and <strong>dispersion</strong> are considered as transport processes. <br>
@@ -562,7 +563,7 @@ Computations are based on analytical solutions involving the complementary error
 <p>This tool can also be downloaded and run locally. For that download the <strong>_1D_advection_dispersion.ipynb</strong> file from the book GitHub site, and execute the process in any editor (e.g., JUPYTER notebook, JUPYTER lab) that is able to read and execute this file-type.</p>
 <p>The codes are licensed under CC by 4.0 <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/deed.en">(use anyways, but acknowledge the original work)</a></p>
 <section id="python-libraries-cell">
-<h3><span class="section-number">8.1.1. </span>Python <code class="docutils literal notranslate"><span class="pre">Libraries</span></code> Cell<a class="headerlink" href="#python-libraries-cell" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">9.1.1. </span>Python <code class="docutils literal notranslate"><span class="pre">Libraries</span></code> Cell<a class="headerlink" href="#python-libraries-cell" title="Permalink to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">numpy</span></code> for computation, <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code> for plotting and <code class="docutils literal notranslate"><span class="pre">pandas</span></code> for tabulation, are most general libraries for our works.</p>
 <p><code class="docutils literal notranslate"><span class="pre">ipywidget</span></code> - for interactive activities, are <strong>special</strong> functions used in this tool.</p>
 <p><strong>Please execute the cell before moving to the next step.</strong></p>
@@ -578,7 +579,7 @@ Computations are based on analytical solutions involving the complementary error
 </div>
 </section>
 <section id="input-data-cell">
-<h3><span class="section-number">8.1.2. </span><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Data</span></code> Cell<a class="headerlink" href="#input-data-cell" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">9.1.2. </span><code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Data</span></code> Cell<a class="headerlink" href="#input-data-cell" title="Permalink to this heading">#</a></h3>
 <p>In the cell below you can change input values. Pls. read the <strong>info</strong> above and the table before making the changes the input. Also check the boundary type after executing the cell.</p>
 <p><strong>Make sure to execute the cell if you change any input value</strong></p>
 <div class="cell docutils container">
@@ -619,7 +620,7 @@ Computations are based on analytical solutions involving the complementary error
 </div>
 </section>
 <section id="the-main-function-cell">
-<h3><span class="section-number">8.1.3. </span>The <strong>main</strong> <code class="docutils literal notranslate"><span class="pre">function</span></code> cell<a class="headerlink" href="#the-main-function-cell" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">9.1.3. </span>The <strong>main</strong> <code class="docutils literal notranslate"><span class="pre">function</span></code> cell<a class="headerlink" href="#the-main-function-cell" title="Permalink to this heading">#</a></h3>
 <p>You do not have to change the two cells below only have to execute only once.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -890,7 +891,7 @@ Computations are based on analytical solutions involving the complementary error
 </div>
 </section>
 <section id="the-interactive-cell">
-<h3><span class="section-number">8.1.4. </span>The <code class="docutils literal notranslate"><span class="pre">Interactive</span></code> cell<a class="headerlink" href="#the-interactive-cell" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">9.1.4. </span>The <code class="docutils literal notranslate"><span class="pre">Interactive</span></code> cell<a class="headerlink" href="#the-interactive-cell" title="Permalink to this heading">#</a></h3>
 <p>Just execute it</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -977,7 +978,7 @@ Computations are based on analytical solutions involving the complementary error
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Type curve and fitting pumping data tool</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Type curve and fitting pumping data tool</p>
       </div>
     </a>
     <a class="right-next"
@@ -985,7 +986,7 @@ Computations are based on analytical solutions involving the complementary error
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">9. </span>Simulating Kinetics and Degradation</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Simulating Kinetics and Degradation</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1004,11 +1005,11 @@ Computations are based on analytical solutions involving the complementary error
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#info-on-the-tool">8.1. Info on the tool</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-libraries-cell">8.1.1. Python <code class="docutils literal notranslate"><span class="pre">Libraries</span></code> Cell</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#input-data-cell">8.1.2. <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Data</span></code> Cell</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-main-function-cell">8.1.3. The <strong>main</strong> <code class="docutils literal notranslate"><span class="pre">function</span></code> cell</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-interactive-cell">8.1.4. The <code class="docutils literal notranslate"><span class="pre">Interactive</span></code> cell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#info-on-the-tool">9.1. Info on the tool</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-libraries-cell">9.1.1. Python <code class="docutils literal notranslate"><span class="pre">Libraries</span></code> Cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#input-data-cell">9.1.2. <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">Data</span></code> Cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-main-function-cell">9.1.3. The <strong>main</strong> <code class="docutils literal notranslate"><span class="pre">function</span></code> cell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-interactive-cell">9.1.4. The <code class="docutils literal notranslate"><span class="pre">Interactive</span></code> cell</a></li>
 </ul>
 </li>
 </ul>
