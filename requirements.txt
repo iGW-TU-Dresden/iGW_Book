@@ -6,3 +6,4 @@ ghp-import
 pandas
 panel
 ipywidgets
+scipy
