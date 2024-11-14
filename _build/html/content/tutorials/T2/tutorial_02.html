@@ -1,12 +1,13 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../../../" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>3. Aquifer and Storage Properties &#8212; Groundwater</title>
   
@@ -14,50 +15,54 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=c00225cd" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css?v=dcc31e86" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/.ipynb_checkpoints/custom-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/.ipynb_checkpoints/myfile-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
-    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../../../_static/custom.js"></script>
+    <script src="../../../_static/.ipynb_checkpoints/custom-checkpoint.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../../_static/design-tabs.js"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-RV7RHTCBY3"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -65,23 +70,17 @@
                 gtag('js', new Date());
                 gtag('config', 'G-RV7RHTCBY3');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-RV7RHTCBY3');
-            </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/tutorials/T2/tutorial_02';</script>
-    <script src="../../../_static/custom.js"></script>
-    <script src="../../../_static/.ipynb_checkpoints/custom-checkpoint.js"></script>
     <link rel="canonical" href="https://github.com/iGW-TU-Dresden/iGW_Book/content/tutorials/T2/tutorial_02.html" />
-    <link rel="icon" href="../../../_static/logo.ico"/>
+    <link rel="shortcut icon" href="../../../_static/logo.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="4. Darcy Law and Conductivity" href="../T3/tutorial_03.html" />
@@ -95,23 +94,28 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
+
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -133,20 +137,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -161,13 +157,9 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
-  
-    
   
 
 <a class="navbar-brand logo" href="../../../intro.html">
-  
   
   
   
@@ -177,23 +169,12 @@
       
     
     
-    <img src="../../../_static/logo.jpg" class="logo__image only-light" alt="Groundwater - Home"/>
-    <script>document.write(`<img src="../../../_static/logo.jpg" class="logo__image only-dark" alt="Groundwater - Home"/>`);</script>
+    <img src="../../../_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -272,7 +253,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
 
@@ -281,14 +262,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -313,14 +294,14 @@
       
       <li><a href="https://colab.research.google.com/github/iGW-TU-Dresden/iGW_Book/blob/main/content/tutorials/T2/tutorial_02.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch on Colab"
+   title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
+    <img src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -459,28 +440,26 @@
 </button>
 
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</button>
+</label>
 </div></div>
       
     </div>
@@ -524,7 +503,7 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
   <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1158,10 +1137,10 @@ if (window.Jupyter !== undefined) {
 })(window);</script></div></div>
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="aquifer-and-storage-properties">
-<h1><span class="section-number">3. </span>Aquifer and Storage Properties<a class="headerlink" href="#aquifer-and-storage-properties" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">3. </span>Aquifer and Storage Properties<a class="headerlink" href="#aquifer-and-storage-properties" title="Permalink to this heading">#</a></h1>
 <p><em>(The contents presented in this section were re-developed principally by Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)</em></p>
 <section id="tutorial-problem-1">
-<h2><span class="section-number">3.1. </span>Tutorial Problem 1<a class="headerlink" href="#tutorial-problem-1" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.1. </span>Tutorial Problem 1<a class="headerlink" href="#tutorial-problem-1" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input tag_full-width docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id='85d876c1-c682-4934-a3b3-6a7907bfe430'>
@@ -1328,7 +1307,7 @@ Additional water volume: 1.8E+06 m³
 </div>
 </section>
 <section id="tutorial-problem-2">
-<h2><span class="section-number">3.2. </span>Tutorial Problem 2<a class="headerlink" href="#tutorial-problem-2" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.2. </span>Tutorial Problem 2<a class="headerlink" href="#tutorial-problem-2" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input tag_full-width docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id='6495c165-e9b9-4f51-ae53-bb9fe5f47991'>
@@ -1469,7 +1448,7 @@ Additional water volume: 1.8E+06 m³
 </div>
 </section>
 <section id="tutotorial-problem-3">
-<h2><span class="section-number">3.3. </span>Tutotorial Problem 3<a class="headerlink" href="#tutotorial-problem-3" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.3. </span>Tutotorial Problem 3<a class="headerlink" href="#tutotorial-problem-3" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input tag_full-width docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id='2a4db8ab-f189-40fb-bcb4-4d9d598ce2e3'>
@@ -1569,7 +1548,7 @@ The Additional Water is 22.81 m³
 </div>
 </section>
 <section id="tutorial-problem-4">
-<h2><span class="section-number">3.4. </span>Tutorial Problem 4:<a class="headerlink" href="#tutorial-problem-4" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.4. </span>Tutorial Problem 4:<a class="headerlink" href="#tutorial-problem-4" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input tag_full-width docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div id='7349570f-8acb-4a3a-8f78-6933776f833d'>
@@ -1709,7 +1688,7 @@ The Additional Water is 22.81 m³
 </div>
 </section>
 <section id="tutorial-problem-4-solution">
-<h2><span class="section-number">3.5. </span>Tutorial Problem 4 – Solution<a class="headerlink" href="#tutorial-problem-4-solution" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.5. </span>Tutorial Problem 4 – Solution<a class="headerlink" href="#tutorial-problem-4-solution" title="Permalink to this heading">#</a></h2>
 <p><strong>For details check lecture slides L03 - 28, 29 and 31</strong></p>
 <p>In unconfined aquifer Stortavity (<span class="math notranslate nohighlight">\(S\)</span>) is used instead of storage coefficient <span class="math notranslate nohighlight">\(S_s\)</span>. They both are related with thickness (<span class="math notranslate nohighlight">\(m\)</span>) as:</p>
 <div class="math notranslate nohighlight">
@@ -1758,12 +1737,12 @@ The total change in the volume of water is: 0.073 Km³
 </div>
 </section>
 <section id="tutorial-problem-5">
-<h2><span class="section-number">3.6. </span>Tutorial Problem 5:<a class="headerlink" href="#tutorial-problem-5" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.6. </span>Tutorial Problem 5:<a class="headerlink" href="#tutorial-problem-5" title="Permalink to this heading">#</a></h2>
 <p>A confined aquifer is considered in this problem. Specific storage and total porosity equal <span class="math notranslate nohighlight">\(7.5\times 10^{-6}\)</span> 1/m and 30%, respectively.
 What is the compressibility of the porous medium? (compressibility of water: <span class="math notranslate nohighlight">\(4.6\times 10^{-10}\)</span> m<span class="math notranslate nohighlight">\(^2\)</span>/N, density of water: 998 kg/m<span class="math notranslate nohighlight">\(^3\)</span>)</p>
 </section>
 <section id="tutorial-problem-5-solution">
-<h2><span class="section-number">3.7. </span>Tutorial Problem 5 – Solution<a class="headerlink" href="#tutorial-problem-5-solution" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.7. </span>Tutorial Problem 5 – Solution<a class="headerlink" href="#tutorial-problem-5-solution" title="Permalink to this heading">#</a></h2>
 <p><strong>For details check slide nr. L03-28</strong></p>
 <p>Specific Storage,</p>
 <div class="math notranslate nohighlight">
@@ -1799,7 +1778,7 @@ What is the compressibility of the porous medium? (compressibility of water: <sp
 </div>
 </section>
 <section id="tutorial-problem-6">
-<h2><span class="section-number">3.8. </span>Tutorial Problem 6:<a class="headerlink" href="#tutorial-problem-6" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.8. </span>Tutorial Problem 6:<a class="headerlink" href="#tutorial-problem-6" title="Permalink to this heading">#</a></h2>
 <p>Due to water extraction from a confined aquifer the pressure head is
 lowered by 183 m. The following aquifer parameters are available: storage
 coefficient = <span class="math notranslate nohighlight">\(5\times10^{-4}\)</span>, total porosity = 0.33, thickness (before water
@@ -1807,7 +1786,7 @@ extraction) = 80 m, compressibility of the porous medium = <span class="math not
 <p>What is the amount of land subsidence resulting from the water extraction?</p>
 </section>
 <section id="tutorial-problem-6-solution">
-<h2><span class="section-number">3.9. </span>Tutorial Problem 6 – Solution<a class="headerlink" href="#tutorial-problem-6-solution" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.9. </span>Tutorial Problem 6 – Solution<a class="headerlink" href="#tutorial-problem-6-solution" title="Permalink to this heading">#</a></h2>
 <p><strong>For details see slide nr. L03-25 and 26</strong><br></p>
 <p>Change in total volume due to <span class="math notranslate nohighlight">\(\Delta p_{pm}\)</span> :</p>
 <div class="math notranslate nohighlight">
@@ -1847,16 +1826,16 @@ Substituting these relation in the above equation we get:</p>
 </div>
 </section>
 <section id="home-work-problems">
-<h2><span class="section-number">3.10. </span>HOME WORK PROBLEMS<a class="headerlink" href="#home-work-problems" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">3.10. </span>HOME WORK PROBLEMS<a class="headerlink" href="#home-work-problems" title="Permalink to this heading">#</a></h2>
 <section id="homework-problem-1">
-<h3><span class="section-number">3.10.1. </span>Homework Problem 1<a class="headerlink" href="#homework-problem-1" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">3.10.1. </span>Homework Problem 1<a class="headerlink" href="#homework-problem-1" title="Permalink to this heading">#</a></h3>
 <p>The pressure head in an aquifer extending over 200 km<span class="math notranslate nohighlight">\(^2\)</span> is decreased by 1.60 m.
 Determine the loss of groundwater in the aquifer for two scenarios:
 The aquifer is unconfined (storage coefficient 0.13).
 The aquifer is confined (storage coefficient 0.0005).</p>
 </section>
 <section id="homework-problem-2">
-<h3><span class="section-number">3.10.2. </span>Homework Problem 2<a class="headerlink" href="#homework-problem-2" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">3.10.2. </span>Homework Problem 2<a class="headerlink" href="#homework-problem-2" title="Permalink to this heading">#</a></h3>
 <p>Conduct a sieve analysis for a dried soil sample (see data in the table below)</p>
 <ol class="arabic simple">
 <li><p>Draw the granulometric curve (cumulative mass distribution) and briefly characterise the sediment with regard to its major constituent(s).</p></li>
@@ -1962,8 +1941,8 @@ The aquifer is confined (storage coefficient 0.0005).</p>
               
               
               
-                <footer class="prev-next-footer d-print-none">
-                  
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../../background/02_jupyter.html"
@@ -1991,7 +1970,6 @@ The aquifer is confined (storage coefficient 0.0005).</p>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -2034,10 +2012,9 @@ By Institute of Groud Water -TU Dresden
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2022.
       <br/>
     
   </p>
@@ -2067,8 +2044,8 @@ By Institute of Groud Water -TU Dresden
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
