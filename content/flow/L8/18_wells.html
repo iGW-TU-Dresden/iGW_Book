@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>7. Wells &#8212; Groundwater</title>
   
@@ -15,54 +14,50 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=c00225cd" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css?v=dcc31e86" />
     <link rel="stylesheet" type="text/css" href="../../../_static/.ipynb_checkpoints/custom-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/.ipynb_checkpoints/myfile-checkpoint.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
-    <script src="../../../_static/custom.js"></script>
-    <script src="../../../_static/.ipynb_checkpoints/custom-checkpoint.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-RV7RHTCBY3"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -70,17 +65,23 @@
                 gtag('js', new Date());
                 gtag('config', 'G-RV7RHTCBY3');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-RV7RHTCBY3');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/flow/L8/18_wells';</script>
+    <script src="../../../_static/custom.js"></script>
+    <script src="../../../_static/.ipynb_checkpoints/custom-checkpoint.js"></script>
     <link rel="canonical" href="https://github.com/iGW-TU-Dresden/iGW_Book/content/flow/L8/18_wells.html" />
-    <link rel="shortcut icon" href="../../../_static/logo.ico"/>
+    <link rel="icon" href="../../../_static/logo.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="1. Conservative Transport" href="../../transport/L9/21_conservative_transport.html" />
@@ -94,28 +95,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -137,12 +133,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -157,9 +161,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../../../intro.html">
+  
   
   
   
@@ -169,12 +177,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../../_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../../_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../../_static/logo.jpg" class="logo__image only-light" alt="Groundwater - Home"/>
+    <script>document.write(`<img src="../../../_static/logo.jpg" class="logo__image only-dark" alt="Groundwater - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -225,13 +244,15 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../tools/decay.html">1. Simulating Mass Budget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/sieve_analysis.html">2. Simulating Seive Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/effective_K.html">3. Simulating Effective hydraulic conductivity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/uniform_flow_and_well.html">4. Uniform Flow and Well</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/aniso2D.html">5. Simulating the Anisotropy and flow direction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/type_curve_fit.html">6. Type curve and fitting pumping data tool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_advection_dispersion.html">7. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/Kinetics_degradation.html">8. Simulating Kinetics and Degradation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_ditchflow.html">9. Simulating 1D Trench Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/Darcy_Grad.html">3. Hydraulic Gradient visualised using Darcy Law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/effective_K.html">4. Simulating Effective hydraulic conductivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/GW_Vel.html">5. Ground Water Velocity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/uniform_flow_and_well.html">6. Uniform Flow and Well</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/aniso2D.html">7. Simulating the Anisotropy and flow direction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/type_curve_fit.html">8. Type curve and fitting pumping data tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_advection_dispersion.html">9. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/Kinetics_degradation.html">10. Simulating Kinetics and Degradation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_ditchflow.html">11. Simulating 1D Trench Flow</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Previous Years Q&amp;A</span></p>
 <ul class="nav bd-sidenav">
@@ -251,7 +272,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -260,14 +281,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -292,14 +313,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/iGW-TU-Dresden/iGW_Book/blob/main/content/flow/L8/18_wells.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -438,26 +459,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -529,20 +552,20 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="wells">
-<h1><span class="section-number">7. </span>Wells<a class="headerlink" href="#wells" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">7. </span>Wells<a class="headerlink" href="#wells" title="Link to this heading">#</a></h1>
 <p>(<em>The contents are based on the class lecture materials of Prof. R. Liedl. Modifications mostly to fit this specific format were done by Prof. Liedl and Dr. P. K. Yadav.</em>)</p>
 <hr class="docutils" />
 <section id="motivation">
-<h2><span class="section-number">7.1. </span>Motivation<a class="headerlink" href="#motivation" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.1. </span>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
 <p>In the last lecture (<a class="reference internal" href="../L7/17_quantify_flow.html"><span class="doc">Quantifying 3D Groundwater Flow</span></a> we derived system equations for different groundwater flow problems. We realized of the difficulties associated with solving flow problems specially at higher dimensions (2D/3D). Numerical methods are mostly used for solving groundwater problems but direct (analytical) solutions are also possible for some problems.</p>
 <p><strong>Wells</strong> are the most common and also most extensively used method of utilizing (or affecting) groundwater. Thus, <em>wells</em> represent a very common groundwater problem. We can now use our understanding of aquifer properties and groundwater system equations to analyze effect of <em>wells</em> on the natural groundwater flow. We will however restrict our extent, in this lecture, to problems that can be directly solved. After learning numerical methods (in last part of this course), we will apply it to evaluate more complex groundwater problems also associated with wells.</p>
 <p>We begin this lecture recalling groundwater storage property <em>transmissivity.</em> Introducing <em>wells</em> we then derive few relations that can help us understand the effect of wells in groundwater flow. To conclude, we will use the <em>wells</em> to characterize aquifers, i.e., using so called pumping test.</p>
 </section>
 <section id="transmissivity">
-<h2><span class="section-number">7.2. </span>Transmissivity<a class="headerlink" href="#transmissivity" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.2. </span>Transmissivity<a class="headerlink" href="#transmissivity" title="Link to this heading">#</a></h2>
 <p>When discussing storage properties in <a class="reference internal" href="../L3/13_gw_storage.html"><span class="doc">Groundwater as a reservoir</span></a>, we saw that aquifers or single layers may frequently be treated as two-dimensional systems. This is justified because the lateral extension of aquifers is usually much larger than the vertical extension. Thus, vertical variations of storage properties can be replaced by some average value without adversely affecting the quantification of groundwater storage.</p>
 <p>Similar things can be done with regard to conductivity properties and this brings us to the geohydraulic parameter of transmissivity (<span class="math notranslate nohighlight">\(T\)</span>,  L<span class="math notranslate nohighlight">\(^2\)</span>T<span class="math notranslate nohighlight">\(^{-1}\)</span>). The idea is to neglect vertical variations of hydraulic conductivity and to use vertically averaged values instead. This procedure does not eliminate horizontal variability, so transmissivity may still depend on horizontal coordinates  <span class="math notranslate nohighlight">\((x, y)\)</span>.</p>
 <p>The vertically averaged <span class="math notranslate nohighlight">\(K\)</span> value is then multiplied by the water-saturated thickness to obtain transmissivity. The concept of water-saturated thickness (or water-saturated depth) requires to distinguish whether <em>confined</em> or <em>unconfined flow</em> conditions prevail.</p>
@@ -551,14 +574,14 @@ document.write(`
 <figure class="align-center" id="trans-c-2d">
 <a class="reference internal image-reference" href="../../../_images/L08_f1.png"><img alt="../../../_images/L08_f1.png" src="../../../_images/L08_f1.png" style="width: 392.40000000000003px; height: 222.4px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.1 </span><span class="caption-text">The transmissivity cuboid in confined aquifer.</span><a class="headerlink" href="#trans-c-2d" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.1 </span><span class="caption-text">The transmissivity cuboid in confined aquifer.</span><a class="headerlink" href="#trans-c-2d" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Things are a bit more complicated for unconfined aquifers.  <a class="reference internal" href="#trans-u-2d"><span class="std std-numref">Fig. 7.2</span></a> illustrates that water-saturated thickness extends from the aquifer bottom to the groundwater table. It is important to note that transmissivity of unconfined aquifers depends on the vertical position of the groundwater table. For instance, if the groundwater table is lowered during to a draught period, transmissivity is decreasing. This is fundamentally different from the confined case where the water-saturated thickness is given by aquifer geometry only and is not affected by hydraulic head changes.</p>
 <figure class="align-center" id="trans-u-2d">
 <a class="reference internal image-reference" href="../../../_images/L08_f2.png"><img alt="../../../_images/L08_f2.png" src="../../../_images/L08_f2.png" style="width: 483.20000000000005px; height: 262.40000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.2 </span><span class="caption-text">The transmissivity cuboid in unconfined aquifer.</span><a class="headerlink" href="#trans-u-2d" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.2 </span><span class="caption-text">The transmissivity cuboid in unconfined aquifer.</span><a class="headerlink" href="#trans-u-2d" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Computing transmissivity of unconfined aquifers requires to determine the difference of hydraulic head h and the elevation of aquifer bottom <span class="math notranslate nohighlight">\(z_{bot}\)</span>. Based on this, transmissivity is given by <span class="math notranslate nohighlight">\(T_x = K_x\cdot(h - z_{bot})\)</span> and <span class="math notranslate nohighlight">\(T_y = K_y\cdot(h - z_{bot})\)</span>. As above, we are allowing for horizontal aquifer anisotropy. For an isotropic unconfined aquifer we get <span class="math notranslate nohighlight">\(T = K\cdot(h - z_{bot})\)</span>.</p>
@@ -572,7 +595,7 @@ document.write(`
 </div>
 <p>Finally, we can try to compute transmissivity for isotropic aquifers and check how the result depends on several quantities like aquifer bottom, aquifer top, and hydraulic head.</p>
 <section id="example-problem">
-<h3><span class="section-number">7.2.1. </span>Example problem<a class="headerlink" href="#example-problem" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.2.1. </span>Example problem<a class="headerlink" href="#example-problem" title="Link to this heading">#</a></h3>
 <div class="admonition-transmissivity admonition">
 <p class="admonition-title">Transmissivity</p>
 <p>Find if the aquifer is confined or unconfined, and then calculate transmissivity of the aquifer.</p>
@@ -612,19 +635,19 @@ The required transmissivity is 1.62e-03 m²/s
 </section>
 </section>
 <section id="wells-overview">
-<h2><span class="section-number">7.3. </span>Wells - Overview<a class="headerlink" href="#wells-overview" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.3. </span>Wells - Overview<a class="headerlink" href="#wells-overview" title="Link to this heading">#</a></h2>
 <section id="what-is-a-well">
-<h3><span class="section-number">7.3.1. </span>What is a Well?<a class="headerlink" href="#what-is-a-well" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.3.1. </span>What is a Well?<a class="headerlink" href="#what-is-a-well" title="Link to this heading">#</a></h3>
 <p>A <strong>well</strong> is a shaft or a hole that has been sunk, dug or drilled into the earth to extract water (source: <a class="reference external" href="https://hydrologie.org/glu/HINDEN.HTM">Glossary of Hydrology</a>).</p>
 <figure class="align-center" id="well">
 <a class="reference internal image-reference" href="../../../_images/L08_f3.png"><img alt="../../../_images/L08_f3.png" src="../../../_images/L08_f3.png" style="width: 567.0px; height: 422.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.3 </span><span class="caption-text">Well and its components.</span><a class="headerlink" href="#well" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.3 </span><span class="caption-text">Well and its components.</span><a class="headerlink" href="#well" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="using-wells">
-<h3><span class="section-number">7.3.2. </span>Using wells<a class="headerlink" href="#using-wells" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.3.2. </span>Using wells<a class="headerlink" href="#using-wells" title="Link to this heading">#</a></h3>
 <p>Wells are very extensively used around the globe. The contents below only highlights few of the use of wells.</p>
 <blockquote>
 <div><p>Water supply: e.g., for households, agriculture, industry</p>
@@ -642,26 +665,26 @@ The required transmissivity is 1.62e-03 m²/s
 <figure class="align-center" id="well-ex">
 <a class="reference internal image-reference" href="../../../_images/L08_f5.png"><img alt="../../../_images/L08_f5.png" src="../../../_images/L08_f5.png" style="width: 690.4000000000001px; height: 256.8px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.4 </span><span class="caption-text">Well at the excavation site</span><a class="headerlink" href="#well-ex" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.4 </span><span class="caption-text">Well at the excavation site</span><a class="headerlink" href="#well-ex" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><a class="reference internal" href="#well-refuse"><span class="std std-numref">Fig. 7.5</span></a> presents the case of using wells to delineate contamination site from the groundwater. These are part of the development of sanitary landfills sites or industries that pose threat to groundwater quality. Wells are used to lower groundwater table such that seepage of refuse is contained in the limited region.</p>
 <figure class="align-center" id="well-refuse">
 <a class="reference internal image-reference" href="../../../_images/L08_f6z.png"><img alt="../../../_images/L08_f6z.png" src="../../../_images/L08_f6z.png" style="width: 30cm; height: 8cm;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.5 </span><span class="caption-text">Well at the refuse site</span><a class="headerlink" href="#well-refuse" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.5 </span><span class="caption-text">Well at the refuse site</span><a class="headerlink" href="#well-refuse" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="fully-versus-partially-penetrating-wells">
-<h3><span class="section-number">7.3.3. </span>Fully versus Partially Penetrating Wells<a class="headerlink" href="#fully-versus-partially-penetrating-wells" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.3.3. </span>Fully versus Partially Penetrating Wells<a class="headerlink" href="#fully-versus-partially-penetrating-wells" title="Link to this heading">#</a></h3>
 <p>Fully penetrating wells:
 : The fully penetrating wells are those which extends through the whole saturated depth of an aquifer and are constructed in such a manner that water is permitted to the well screen over its length <a class="reference external" href="https://hydrologie.org/glu/HINDEN.HTM">Glossary of Hydrology</a>).</p>
 <p><a class="reference internal" href="#full-pen"><span class="std std-numref">Fig. 7.6</span></a> shows a schematic of water flow in a fully penetrating wells.</p>
 <figure class="align-center" id="full-pen">
 <a class="reference internal image-reference" href="../../../_images/L08_f7x.png"><img alt="../../../_images/L08_f7x.png" src="../../../_images/L08_f7x.png" style="width: 732.8000000000001px; height: 237.60000000000002px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.6 </span><span class="caption-text">Flownet in a fully penetrating wells</span><a class="headerlink" href="#full-pen" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.6 </span><span class="caption-text">Flownet in a fully penetrating wells</span><a class="headerlink" href="#full-pen" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Partially penetrating Wells:
@@ -670,7 +693,7 @@ The required transmissivity is 1.62e-03 m²/s
 <figure class="align-center" id="par-pen">
 <a class="reference internal image-reference" href="../../../_images/L08_f7y.png"><img alt="../../../_images/L08_f7y.png" src="../../../_images/L08_f7y.png" style="width: 620.8000000000001px; height: 367.6px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.7 </span><span class="caption-text">Flownet in a partially penetrating wells</span><a class="headerlink" href="#par-pen" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.7 </span><span class="caption-text">Flownet in a partially penetrating wells</span><a class="headerlink" href="#par-pen" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Comparing the Flownets in <a class="reference internal" href="#full-pen"><span class="std std-numref">Fig. 7.6</span></a> and <a class="reference internal" href="#par-pen"><span class="std std-numref">Fig. 7.7</span></a>, it can be observed that the vertical flow components can be significant in the partially penetrating case. This then lead to a 3D groundwater problem compared to the fully penetrating case, which can be treated as 2D groundwater problem as vertical flow component has limited effect.</p>
@@ -678,7 +701,7 @@ The required transmissivity is 1.62e-03 m²/s
 </section>
 </section>
 <section id="groundwater-flow-near-wells-operated-at-steady-state">
-<h2><span class="section-number">7.4. </span>Groundwater Flow Near Wells Operated at Steady State<a class="headerlink" href="#groundwater-flow-near-wells-operated-at-steady-state" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.4. </span>Groundwater Flow Near Wells Operated at Steady State<a class="headerlink" href="#groundwater-flow-near-wells-operated-at-steady-state" title="Link to this heading">#</a></h2>
 <p>As stated earlier wells are mostly operated under steady-state condition. Here will attempt to quantify the case. We will first attempt to identify the most relevant problems associated with the steadily pumping wells and then define our approach to solve them. The <strong>two</strong> most important points that need to be addressed here  are:</p>
 <blockquote>
 <div><p>Which relevant quantities are needed to describe steady-state flow
@@ -697,12 +720,12 @@ parameters under steady-state conditions?</p>
 <div><p>We delineate the problem, e.g., study the <em>confined</em> and the <em>unconfined</em> cases separately.</p>
 </div></blockquote>
 <section id="cone-of-depression-in-a-confined-aquifer">
-<h3><span class="section-number">7.4.1. </span>Cone of Depression in a Confined Aquifer<a class="headerlink" href="#cone-of-depression-in-a-confined-aquifer" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.4.1. </span>Cone of Depression in a Confined Aquifer<a class="headerlink" href="#cone-of-depression-in-a-confined-aquifer" title="Link to this heading">#</a></h3>
 <p>A <strong>cone of depression</strong> (or drawdown cone) will result when the well pumps groundwater groundwater is pumped from the well. <a class="reference internal" href="#cone-con-un"><span class="std std-numref">Fig. 7.8</span></a> presents the schematic with relevant quantities of a well pumping case in both confined and unconfined aquifers. In both cases the well is fully penetrating. As can be understood from the figure that in the unconfined case the drawdown (<span class="math notranslate nohighlight">\(s\)</span>) magnitude depends on the water table level. This in the case of confined aquifer is dependent on the hydraulic head.</p>
 <figure class="align-center" id="cone-con-un">
 <a class="reference internal image-reference" href="../../../_images/L08_f8-9.png"><img alt="../../../_images/L08_f8-9.png" src="../../../_images/L08_f8-9.png" style="width: 729.25px; height: 340.25px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.8 </span><span class="caption-text">Cone of depression in a (a) confined Aquifer and (b) unconfined aquifer (right)</span><a class="headerlink" href="#cone-con-un" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.8 </span><span class="caption-text">Cone of depression in a (a) confined Aquifer and (b) unconfined aquifer (right)</span><a class="headerlink" href="#cone-con-un" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Relevant quantities in the figure:</p>
@@ -732,7 +755,7 @@ parameters under steady-state conditions?</p>
 </ul>
 <p>The Radius of influence (<span class="math notranslate nohighlight">\(R\)</span>) in the figure is the distance from the well at which the drawdown becomes negligible or unobservable. Thus <span class="math notranslate nohighlight">\(R\)</span> delineates the influence of the well on the normal groundwater flow.</p>
 <section id="evolution-of-cone-of-depression-with-time">
-<h4><span class="section-number">7.4.1.1. </span>Evolution of Cone of Depression with Time<a class="headerlink" href="#evolution-of-cone-of-depression-with-time" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">7.4.1.1. </span>Evolution of Cone of Depression with Time<a class="headerlink" href="#evolution-of-cone-of-depression-with-time" title="Link to this heading">#</a></h4>
 <p>Transient models have to be used to observe the evolution of cone of depression. These are mostly only possible through use of numerical models (to be discussed in the later end of this course). The animation provides the computer simulation of evolving cone of depression as a function of time. From the figure it is easier to obtain the radius of influence (<span class="math notranslate nohighlight">\(R\)</span>). It is to be noted that <span class="math notranslate nohighlight">\(R\)</span> will be maximum at the steady-state condition.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
@@ -820,7 +843,7 @@ parameters under steady-state conditions?</p>
 </section>
 </section>
 <section id="law-of-continuity">
-<h3><span class="section-number">7.4.2. </span>Law of Continuity<a class="headerlink" href="#law-of-continuity" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.4.2. </span>Law of Continuity<a class="headerlink" href="#law-of-continuity" title="Link to this heading">#</a></h3>
 <p>Next we attempt to quantify the cone of depression. For this, and it is common in any hydraulics study, we begin with the <em>Law of Continuity.</em> Overall law of continuity implies:</p>
 <div class="admonition-law-of-continuity admonition">
 <p class="admonition-title">Law of Continuity</p>
@@ -829,7 +852,7 @@ parameters under steady-state conditions?</p>
 <figure class="align-center" id="law-cont">
 <a class="reference internal image-reference" href="../../../_images/L08_f10X.png"><img alt="../../../_images/L08_f10X.png" src="../../../_images/L08_f10X.png" style="width: 670.0px; height: 340.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.9 </span><span class="caption-text">Graphic visualization of Law of quantity.</span><a class="headerlink" href="#law-cont" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.9 </span><span class="caption-text">Graphic visualization of Law of quantity.</span><a class="headerlink" href="#law-cont" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>This, also seen in <a class="reference internal" href="#law-cont"><span class="std std-numref">Fig. 7.9</span></a>, implies that the pumping rate <span class="math notranslate nohighlight">\(Q\)</span> corresponds to the discharge <span class="math notranslate nohighlight">\(Q_w\)</span> near the well. Further, under steady-state conditions the law of continuity
@@ -837,7 +860,7 @@ implies that there is the same discharge at all cross sections which
 completely surround the well (“mantle of a cylinder”).</p>
 </section>
 <section id="darcy-s-law-for-flow-towards-a-well-in-a-confined-aquifer">
-<h3><span class="section-number">7.4.3. </span>Darcy’s Law for Flow Towards a Well in a Confined Aquifer<a class="headerlink" href="#darcy-s-law-for-flow-towards-a-well-in-a-confined-aquifer" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.4.3. </span>Darcy’s Law for Flow Towards a Well in a Confined Aquifer<a class="headerlink" href="#darcy-s-law-for-flow-towards-a-well-in-a-confined-aquifer" title="Link to this heading">#</a></h3>
 <p>The Darcy’s law, as we have known so far,  relates the Darcy’s velocity <span class="math notranslate nohighlight">\(v_f\)</span> and the hydraulic gradient <span class="math notranslate nohighlight">\(i\)</span>. If the hydraulic gradient was constant in space, the hydraulic gradient would be (also see <a class="reference internal" href="#law-cont"><span class="std std-numref">Fig. 7.9</span></a> )</p>
 <div class="math notranslate nohighlight">
 \[
@@ -901,7 +924,7 @@ Q_w = \frac{2\cdot\pi\cdot m \cdot K \cdot (H-h)}{2.3\cdot(\log R - \log r_w)}  
 \]</div>
 </section>
 <section id="id2">
-<h3><span class="section-number">7.4.4. </span>Example problem<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.4.4. </span>Example problem<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <div class="admonition-well-discharge-from-confined-aquifer admonition">
 <p class="admonition-title">Well discharge from confined aquifer</p>
 <p>From the provided data, calculate the transmissivity of the aquifer.</p>
@@ -920,7 +943,7 @@ Q_w = \frac{2\cdot\pi\cdot m \cdot K \cdot (H-h)}{2.3\cdot(\log R - \log r_w)}  
 </div>
 </div>
 <section id="solution">
-<h4><span class="section-number">7.4.4.1. </span>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">7.4.4.1. </span>Solution<a class="headerlink" href="#solution" title="Link to this heading">#</a></h4>
 <p>For confined aquifer <span class="math notranslate nohighlight">\(T = K\cdot m\)</span>, the Thiem equation can be modified as:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -960,7 +983,7 @@ The transmissivity in the aquifer is 1.45 m²/d
 </section>
 </section>
 <section id="flow-towards-a-well-in-an-unconfined-aquifer">
-<h2><span class="section-number">7.5. </span>Flow Towards a Well in an Unconfined Aquifer<a class="headerlink" href="#flow-towards-a-well-in-an-unconfined-aquifer" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.5. </span>Flow Towards a Well in an Unconfined Aquifer<a class="headerlink" href="#flow-towards-a-well-in-an-unconfined-aquifer" title="Link to this heading">#</a></h2>
 <p>In the unconfined aquifer, the hydraulic head is function of <span class="math notranslate nohighlight">\(r\)</span>. Thus the discharge in the aquifer:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1005,7 +1028,7 @@ omitted, and we get</p>
 Q_= \frac{\pi\cdot K \cdot (H^2-h^2)}{2.3(\log R - \log r_w)} = \frac{\pi\cdot K \cdot (H^2-h^2)}{2.3\log (R/r_w)}
 \]</div>
 <section id="id3">
-<h3><span class="section-number">7.5.1. </span>Example problem<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.5.1. </span>Example problem<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <div class="admonition-well-discharge-from-unconfined-aquifer admonition">
 <p class="admonition-title">Well discharge from unconfined aquifer</p>
 <p>From the provided data, calculate discharge of the aquifer.</p>
@@ -1051,7 +1074,7 @@ Discharge from the well is 1955.06 m³/d
 </div>
 </section>
 <section id="radius-of-influence">
-<h3><span class="section-number">7.5.2. </span>Radius of Influence<a class="headerlink" href="#radius-of-influence" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.5.2. </span>Radius of Influence<a class="headerlink" href="#radius-of-influence" title="Link to this heading">#</a></h3>
 <p>The radius of influence (<span class="math notranslate nohighlight">\(R\)</span>) can also (instead of using numerical simulations) be obtained from empirical equations. The table below provides a list of few equations.</p>
 <aside class="margin sidebar">
 <p class="sidebar-title">The symbols in equations are:</p>
@@ -1065,7 +1088,7 @@ Discharge from the well is 1955.06 m³/d
 </ul>
 <p>In confined aquifers, <span class="math notranslate nohighlight">\(H\)</span> has to be replaced by the aquifer thickness <span class="math notranslate nohighlight">\(m\)</span>.</p>
 </aside>
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Source</p></th>
 <th class="head"><p></p></th>
@@ -1095,15 +1118,17 @@ Discharge from the well is 1955.06 m³/d
 </tr>
 </tbody>
 </table>
+</div>
 <p><strong>Siechardt</strong> and <strong>Kusakin</strong> equation are among the preferred equations by practitioners. In both equations, <span class="math notranslate nohighlight">\(K\)</span> has to be expressed in <em>m/s</em> and all other quantities must be expressed in <em>m.</em> <em>R</em> depends on drawdown <span class="math notranslate nohighlight">\(s= H-h\)</span> in both equations. Trial and error or iterative strategies have to be used to determine <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(h\)</span>.</p>
 </section>
 </section>
 <section id="aquifer-characterisation-by-pumping-tests">
-<h2><span class="section-number">7.6. </span>Aquifer Characterisation by Pumping Tests<a class="headerlink" href="#aquifer-characterisation-by-pumping-tests" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.6. </span>Aquifer Characterisation by Pumping Tests<a class="headerlink" href="#aquifer-characterisation-by-pumping-tests" title="Link to this heading">#</a></h2>
 <p>Pumping tests are used to estimate aquifer properties such as hydraulic conductivity <span class="math notranslate nohighlight">\((K)\)</span>, transmissivity <span class="math notranslate nohighlight">\((T)\)</span> or storativity <span class="math notranslate nohighlight">\((S)\)</span>. Pumping results in an evolving cone of depression as was discussed earlier (see <a class="reference internal" href="#cone-con-un"><span class="std std-numref">Fig. 7.8</span></a>). The decrease in hydraulic head (or increase in drawdown) with time is recorded in one or more observation wells (and sometimes also in the pumping well itself).</p>
+<img alt="../../../_images/L08_f13.png" src="../../../_images/L08_f13.png" />
 <p>A variety of different schemes exist to evaluate pumping test data. The appropriate method has to be selected according to the specific setting (confined or unconfined, layered system, horizontal or inclined aquifer bottom etc.). A well known approach to derive <span class="math notranslate nohighlight">\(T\)</span> and <span class="math notranslate nohighlight">\(S\)</span> from pumping test data was developed by Theis (1935)<sup><a class="footnote-reference brackets" href="#theis" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></sup></p>
 <section id="applicability-of-the-theis-method">
-<h3><span class="section-number">7.6.1. </span>Applicability of the Theis Method<a class="headerlink" href="#applicability-of-the-theis-method" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.6.1. </span>Applicability of the Theis Method<a class="headerlink" href="#applicability-of-the-theis-method" title="Link to this heading">#</a></h3>
 <p>Pumping test data can be evaluated according to Theis (1935) if the following assumptions are (approximately) justified:</p>
 <ul class="simple">
 <li><p>The aquifer is confined, homogeneous and isotropic.</p></li>
@@ -1131,7 +1156,7 @@ Discharge from the well is 1955.06 m³/d
 </ul>
 </section>
 <section id="drawdown-according-to-theis-1935">
-<h3><span class="section-number">7.6.2. </span>Drawdown According to Theis (1935)<a class="headerlink" href="#drawdown-according-to-theis-1935" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.6.2. </span>Drawdown According to Theis (1935)<a class="headerlink" href="#drawdown-according-to-theis-1935" title="Link to this heading">#</a></h3>
 <p>Theis (1935) deals with the transient flow (as opposed to steady-state methods discussed above) of water to a pumping well. The time-dependent drawdown <span class="math notranslate nohighlight">\(s\)</span> in an observation well, which is a distance <span class="math notranslate nohighlight">\(r\)</span> apart from the pumping well, is given by</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
@@ -1171,7 +1196,7 @@ u = \frac{Sr^2}{4Tt} \tag{T2}
 <p>These two equations are used to derive <span class="math notranslate nohighlight">\(T\)</span> and <span class="math notranslate nohighlight">\(S\)</span> from drawdown data. This can either be done by applying special computer software or manually by a graphical method, which is discussed next.</p>
 </section>
 <section id="manual-comparison-of-data-and-type-curve">
-<h3><span class="section-number">7.6.3. </span>Manual Comparison of Data and Type Curve<a class="headerlink" href="#manual-comparison-of-data-and-type-curve" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.6.3. </span>Manual Comparison of Data and Type Curve<a class="headerlink" href="#manual-comparison-of-data-and-type-curve" title="Link to this heading">#</a></h3>
 <p>Theis (1935) provides a graphical approach to use the  Theis equation. The following steps are to be followed for using the graphical approach:</p>
 <aside class="sidebar">
 <a class="reference internal image-reference" href="../../../_images/L08_f11.png" id="type-curve-fitting"><img alt="../../../_images/L08_f11.png" class="align-center" id="type-curve-fitting" src="../../../_images/L08_f11.png" style="width: 900px;" /></a>
@@ -1200,13 +1225,13 @@ u = \frac{Sr^2}{4Tt} \tag{T2}
 </div>
 </section>
 <section id="example">
-<h3><span class="section-number">7.6.4. </span>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.6.4. </span>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h3>
 <div class="admonition-using-type-curve admonition">
 <p class="admonition-title">Using Type curve</p>
 <p>For the provided pumping data, find the Transmissivity and Storage coefficient when the steady-discharge was 26.7 L/s.</p>
 </div>
 <section id="id5">
-<h4><span class="section-number">7.6.4.1. </span>Solution<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">7.6.4.1. </span>Solution<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
 <p>The practical application of the Theis method is facilitated by selecting a match point in the range of the data such that corresponding values <span class="math notranslate nohighlight">\(W_A\)</span>
 and <span class="math notranslate nohighlight">\(1/u_A\)</span> are “simple”.</p>
 <a class="reference internal image-reference" href="../../../_images/L08_f14.png" id="id6"><img alt="../../../_images/L08_f14.png" class="align-center" id="id6" src="../../../_images/L08_f14.png" style="width: 600px;" /></a>
@@ -1233,24 +1258,24 @@ t/r^2 = 0.57
 </section>
 </section>
 <section id="computer-based-comparison-of-data-and-type-curve">
-<h3><span class="section-number">7.6.5. </span>Computer-Based Comparison of Data and Type Curve<a class="headerlink" href="#computer-based-comparison-of-data-and-type-curve" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">7.6.5. </span>Computer-Based Comparison of Data and Type Curve<a class="headerlink" href="#computer-based-comparison-of-data-and-type-curve" title="Link to this heading">#</a></h3>
 <p>The data in the type-curve can now easily be fitted using computer simulations. The <a class="reference internal" href="#type-cur-com"><span class="std std-numref">Fig. 7.10</span></a> is from the <a class="reference internal" href="../../tutorials/T7/tutorial_07.html"><span class="doc">Wells</span></a>. The simulation tool <a class="reference internal" href="../../tools/type_curve_fit.html"><span class="doc">Type curve and fitting pumping data tool</span></a> provided can be used to fit user data to the type curve.</p>
 <figure class="align-center" id="type-cur-com">
 <a class="reference internal image-reference" href="../../../_images/L08_f15.png"><img alt="../../../_images/L08_f15.png" src="../../../_images/L08_f15.png" style="width: 540.0px; height: 360.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.10 </span><span class="caption-text">Computationally fitted data to the Type curve</span><a class="headerlink" href="#type-cur-com" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.10 </span><span class="caption-text">Computationally fitted data to the Type curve</span><a class="headerlink" href="#type-cur-com" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
 <section id="additional-material">
-<h2><span class="section-number">7.7. </span>Additional Material<a class="headerlink" href="#additional-material" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.7. </span>Additional Material<a class="headerlink" href="#additional-material" title="Link to this heading">#</a></h2>
 <div class="toggle docutils container">
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRxhZiKC5URIF2lCzGeOb9lGaFmTntnPrQNI9oBxM1GkRKltNAu9EUAml0ZU31Kcg/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 </section>
 <section id="chapter-quiz">
-<h2><span class="section-number">7.8. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.8. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Link to this heading">#</a></h2>
 <div class="cell tag_remove-input tag_hide-output docutils container">
 <details class="hide above-output">
 <summary aria-label="Toggle hidden content">
@@ -2202,13 +2227,15 @@ if (typeof version == 'undefined') {
 </details>
 </div>
 <hr class="footnotes docutils" />
-<aside class="footnote brackets" id="theim" role="note">
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="theim" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>Thiem, G. (1906), <em>Hydrologische Methoden</em>, 56 pp., Gephardt, Leipzig, Germany.</p>
 </aside>
-<aside class="footnote brackets" id="theis" role="note">
+<aside class="footnote brackets" id="theis" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">2</a><span class="fn-bracket">]</span></span>
 <p>Theis, C.V., 1935. The relation between the lowering of the piezometric surface and the rate and duration of discharge of a well using groundwater storage, Am. Geophys. Union Trans., vol. 16, pp. 519-524.</p>
+</aside>
 </aside>
 </section>
 </section>
@@ -2240,8 +2267,8 @@ if (typeof version == 'undefined') {
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../L7/17_quantify_flow.html"
@@ -2269,6 +2296,7 @@ if (typeof version == 'undefined') {
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -2339,9 +2367,10 @@ By Institute of Groud Water -TU Dresden
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -2371,8 +2400,8 @@ By Institute of Groud Water -TU Dresden
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

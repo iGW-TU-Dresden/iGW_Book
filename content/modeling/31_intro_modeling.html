@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>1. Background of Groundwater Modeling &#8212; Groundwater</title>
   
@@ -15,54 +14,50 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=c00225cd" />
+    <link rel="stylesheet" type="text/css" href="../../_static/myfile.css?v=dcc31e86" />
     <link rel="stylesheet" type="text/css" href="../../_static/.ipynb_checkpoints/custom-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/.ipynb_checkpoints/myfile-checkpoint.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
-    <script src="../../_static/custom.js"></script>
-    <script src="../../_static/.ipynb_checkpoints/custom-checkpoint.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-RV7RHTCBY3"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -70,17 +65,23 @@
                 gtag('js', new Date());
                 gtag('config', 'G-RV7RHTCBY3');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-RV7RHTCBY3');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/modeling/31_intro_modeling';</script>
+    <script src="../../_static/custom.js"></script>
+    <script src="../../_static/.ipynb_checkpoints/custom-checkpoint.js"></script>
     <link rel="canonical" href="https://github.com/iGW-TU-Dresden/iGW_Book/content/modeling/31_intro_modeling.html" />
-    <link rel="shortcut icon" href="../../_static/logo.ico"/>
+    <link rel="icon" href="../../_static/logo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="1. Python Programming language" href="../background/01_python.html" />
@@ -94,28 +95,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -137,12 +133,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -157,9 +161,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../../intro.html">
+  
   
   
   
@@ -169,12 +177,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/logo.jpg" class="logo__image only-light" alt="Groundwater - Home"/>
+    <script>document.write(`<img src="../../_static/logo.jpg" class="logo__image only-dark" alt="Groundwater - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -225,13 +244,15 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../tools/decay.html">1. Simulating Mass Budget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tools/sieve_analysis.html">2. Simulating Seive Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tools/effective_K.html">3. Simulating Effective hydraulic conductivity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tools/uniform_flow_and_well.html">4. Uniform Flow and Well</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tools/aniso2D.html">5. Simulating the Anisotropy and flow direction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tools/type_curve_fit.html">6. Type curve and fitting pumping data tool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tools/1D_advection_dispersion.html">7. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tools/Kinetics_degradation.html">8. Simulating Kinetics and Degradation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tools/1D_ditchflow.html">9. Simulating 1D Trench Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/Darcy_Grad.html">3. Hydraulic Gradient visualised using Darcy Law</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/effective_K.html">4. Simulating Effective hydraulic conductivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/GW_Vel.html">5. Ground Water Velocity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/uniform_flow_and_well.html">6. Uniform Flow and Well</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/aniso2D.html">7. Simulating the Anisotropy and flow direction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/type_curve_fit.html">8. Type curve and fitting pumping data tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/1D_advection_dispersion.html">9. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/Kinetics_degradation.html">10. Simulating Kinetics and Degradation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/1D_ditchflow.html">11. Simulating 1D Trench Flow</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Previous Years Q&amp;A</span></p>
 <ul class="nav bd-sidenav">
@@ -251,7 +272,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -260,14 +281,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -292,14 +313,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/iGW-TU-Dresden/iGW_Book/blob/main/content/modeling/31_intro_modeling.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -438,26 +459,28 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -506,34 +529,34 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <div class="cell tag_hide-input tag_remove-input docutils container">
 </div>
 <section class="tex2jax_ignore mathjax_ignore" id="background-of-groundwater-modeling">
-<h1><span class="section-number">1. </span>Background of Groundwater Modeling<a class="headerlink" href="#background-of-groundwater-modeling" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">1. </span>Background of Groundwater Modeling<a class="headerlink" href="#background-of-groundwater-modeling" title="Link to this heading">#</a></h1>
 <p><em>(The contents presented in this section were re-developed principally by Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)</em></p>
 <hr class="docutils" />
 <section id="motivation">
-<h2><span class="section-number">1.1. </span>Motivation<a class="headerlink" href="#motivation" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.1. </span>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
 <p>This lecture introduces the realm of mathematical modeling realm in groundwater studies. In the previous lectures the fundamental quantities, their properties and approach to quantify them were discussed. Those information were then used to develop system equations for varieties of groundwater problems. It was discussed then that these system equations require mathematical approaches the theory for which have to be systematically discussed and understood. Groundwater modeling can then be described as the systematic use of mathematical approaches leading to solution of the groundwater problem.</p>
 <p>Groundwater modeling is often the first step towards understanding and solving groundwater problems/issues. Groundwater modeling is a very broad topic, this and the following lectures only introduces fundamental part of groundwater modeling. In this course we focus on groundwater flow problems.</p>
 </section>
 <section id="introduction">
-<h2><span class="section-number">1.2. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.2. </span>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <section id="what-is-a-model">
-<h3><span class="section-number">1.2.1. </span>What is a Model?<a class="headerlink" href="#what-is-a-model" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">1.2.1. </span>What is a Model?<a class="headerlink" href="#what-is-a-model" title="Link to this heading">#</a></h3>
 <p>Very succinctly a  <strong>model</strong> is a representation, which may be an image or a description of a real system. The description can be of different form (e.g., scales), of different level of detail (e.g., conceptual versus mathematical). The <strong>system</strong> to be modeled can be a <strong>real</strong> or also <strong>conceptual</strong>. A very relevant example of a real system for this course is the Darcy’s experiment (see figure below), in which water is made  to flow through the porous media.</p>
 <figure class="align-center" id="darcy">
 <a class="reference internal image-reference" href="../../_images/M11_f1.png"><img alt="../../_images/M11_f1.png" src="../../_images/M11_f1.png" style="width: 343.2px; height: 414.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.8 </span><span class="caption-text">Darcy’s experimental setup<sup><a class="footnote-reference brackets" href="#darcy-1856" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></sup></span><a class="headerlink" href="#darcy" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.9 </span><span class="caption-text">Darcy’s experimental setup<sup><a class="footnote-reference brackets" href="#darcy-1856" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></sup></span><a class="headerlink" href="#darcy" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>With Darcy’s experiment, one could set-up a mathematical model to relate flow rate and hydraulic gradient (<span class="math notranslate nohighlight">\(h\)</span>). As model is <em>only an image</em> of the real system, several assumptions have to be made in it’s development. At many instances the model can not be set without these assumptions. In other cases solution of the model may not be possible without these assumptions being part of the model development. Darcy‘s Law, for instance, does not provide an exact representation of flow through individual pore channels. Rather, <strong>average</strong> flow behaviour through <strong>many</strong> pore channels is represented.</p>
 </section>
 <section id="model-types-process-based-and-empirical-models">
-<h3><span class="section-number">1.2.2. </span>Model Types: Process-Based and Empirical Models<a class="headerlink" href="#model-types-process-based-and-empirical-models" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">1.2.2. </span>Model Types: Process-Based and Empirical Models<a class="headerlink" href="#model-types-process-based-and-empirical-models" title="Link to this heading">#</a></h3>
 <p>Model can be classified in many ways. The following two types of classification are a more general way to classify models:</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -551,19 +574,19 @@ document.write(`
 </ol>
 </div></blockquote>
 <section id="conceptual-models">
-<h4><span class="section-number">1.2.2.1. </span>Conceptual models<a class="headerlink" href="#conceptual-models" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">1.2.2.1. </span>Conceptual models<a class="headerlink" href="#conceptual-models" title="Link to this heading">#</a></h4>
 <p>The <strong>conceptual models</strong> is classification of models that distinguishes the qualitative from the quantitative description of a real system. A <strong>conceptual model</strong> provides a qualitative representation of the relevant system components, processes, and impacts in the area of investigation. This representation is usually shown graphically, e.g., as block models (see figure <a class="reference internal" href="#cmodel"><span class="std std-ref">A conceptual model showing different components of a hydrological system that can impact groundwater.</span></a>). It will be shown later that conceptual model in fact is the first block in the development of a mathematical model.</p>
 <figure class="align-center" id="cmodel">
 <a class="reference internal image-reference" href="../../_images/M11_f3.png"><img alt="../../_images/M11_f3.png" src="../../_images/M11_f3.png" style="width: 481.8px; height: 285.8px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.9 </span><span class="caption-text">A conceptual model showing different components of a hydrological system that can impact groundwater.</span><a class="headerlink" href="#cmodel" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.10 </span><span class="caption-text">A conceptual model showing different components of a hydrological system that can impact groundwater.</span><a class="headerlink" href="#cmodel" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="physically-based-models-and-empirical-models">
-<h4><span class="section-number">1.2.2.2. </span>Physically based models and Empirical models<a class="headerlink" href="#physically-based-models-and-empirical-models" title="Permalink to this heading">#</a></h4>
+<h4><span class="section-number">1.2.2.2. </span>Physically based models and Empirical models<a class="headerlink" href="#physically-based-models-and-empirical-models" title="Link to this heading">#</a></h4>
 <p>The <strong>physically based models</strong> also referred to as <strong>process-based</strong> models are models that exclusively relies on the fundamental physical laws - e.g., law of conservation of mass, energy, volume. <em>Compartment</em>  based models are example of physically based models.</p>
-<p>Contrary to use of fundamental physical laws, <strong>empirical models</strong> are developed on the basis on experimental/collected data. Sorption isotherms that were developed in lecture <span class="xref myst">(10)</span> are types of emperical models. As was with the isotherms, these types of models are often based on regression analysis. Figure below show a prediction (blue) line as a predictor of data.</p>
+<p>Contrary to use of fundamental physical laws, <strong>empirical models</strong> are developed on the basis on experimental/collected data. Sorption isotherms that were developed in lecture <a class="reference internal" href="#/contents/transport/lecture_10/22_reactive_transport"><span class="xref myst">(10)</span></a> are types of emperical models. As was with the isotherms, these types of models are often based on regression analysis. Figure below show a prediction (blue) line as a predictor of data.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -611,26 +634,26 @@ document.write(`
 <figure class="align-default" id="empirical" style="width: 600px">
 <img alt="../../_images/42fde3e2a764a9aff32e691bc0d76be43811aa0ba05b9b379b3d4588e937ba4c.png" src="../../_images/42fde3e2a764a9aff32e691bc0d76be43811aa0ba05b9b379b3d4588e937ba4c.png" />
 <figcaption>
-<p><span class="caption-number">Fig. 1.10 </span><span class="caption-text">Empirical relation between hydraulic head and discharge.</span><a class="headerlink" href="#empirical" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.11 </span><span class="caption-text">Empirical relation between hydraulic head and discharge.</span><a class="headerlink" href="#empirical" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In certain cases <strong>hybrid models</strong>, e.g. <strong>semi-empirical</strong> models can also occur. These models combines the components of empirical/numerical and analytical models. Darcy’s law in fact is a semi-empirical model. On the one hand, it is based on the momentum conservation.  On the other hand, it is not possible to <em>strictly</em> deduce the direct proportionality between flow rate and hydraulic gradient by averaging the flow behaviour over all pores.</p>
 </section>
 <section id="mathematical-models">
-<h4><span class="section-number">1.2.2.3. </span>Mathematical models<a class="headerlink" href="#mathematical-models" title="Permalink to this heading">#</a></h4>
-<p>A <strong>mathematical model</strong> provides a quantitative representation of the relevant system components (described by for e.g., conceptual model),processes (e.g., described by physical model) and impacts in the area of investigation. The quantitative representation is based on mathematical equations. The system equations, that were developed and discussed in Lecture <span class="xref myst">(7)</span> are mathematical models.</p>
-<p>System equation or mathematical models can in certain cases be solved directly resulting to an <em>exact solution</em> called <strong>analytical solution</strong>. Theis equation that was developed in Lecture <span class="xref myst">(8)</span> to quantify aquifer drawdown resulting from pumping of groundwater is an example of an analytical solution.</p>
+<h4><span class="section-number">1.2.2.3. </span>Mathematical models<a class="headerlink" href="#mathematical-models" title="Link to this heading">#</a></h4>
+<p>A <strong>mathematical model</strong> provides a quantitative representation of the relevant system components (described by for e.g., conceptual model),processes (e.g., described by physical model) and impacts in the area of investigation. The quantitative representation is based on mathematical equations. The system equations, that were developed and discussed in Lecture <a class="reference internal" href="#/contents/flow/lecture_07/17_quantify_flow"><span class="xref myst">(7)</span></a> are mathematical models.</p>
+<p>System equation or mathematical models can in certain cases be solved directly resulting to an <em>exact solution</em> called <strong>analytical solution</strong>. Theis equation that was developed in Lecture <a class="reference internal" href="#/contents/flow/lecture_08/18_wells"><span class="xref myst">(8)</span></a> to quantify aquifer drawdown resulting from pumping of groundwater is an example of an analytical solution.</p>
 <p>For more complex problems, often a more natural groundwater conditions, only <em>approximate</em> (or non-exact) solution called <strong>numerical solution</strong> can be  obtained. Numerical solutions are obtained after converting the system equation to so called <strong>numerical models</strong>.</p>
 <p>Our focus in this introductory modeling lecture is to understand the development and solution of <em>numerical model</em> of simple groundwater flow problems.</p>
 </section>
 </section>
 <section id="example-of-an-analytical-solution">
-<h3><span class="section-number">1.2.3. </span>Example of an Analytical Solution<a class="headerlink" href="#example-of-an-analytical-solution" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">1.2.3. </span>Example of an Analytical Solution<a class="headerlink" href="#example-of-an-analytical-solution" title="Link to this heading">#</a></h3>
 <p>Consider a conceptual model presented in the Figure <a class="reference internal" href="../tools/1D_ditchflow.html#ditch"><span class="std std-ref">Conceptual model of a flow between two water bodies separated by unconfined aquifer</span></a>. The unconfined aquifer separates two surface exposed water bodies. The water body in the left has a higher hydraulic head (<span class="math notranslate nohighlight">\(h_0\)</span>, [L]) compared to that on the right (<span class="math notranslate nohighlight">\(h_u\)</span>). Thus the flow of water is from left water body to the right one along the separating aquifer. In this scenario one of the problem to address will be to understand how the aquifer reacts to change in heads of water bodies. Additionally, how additional water, e.g., from precipitation/recharge (<span class="math notranslate nohighlight">\(N\)</span>, [L/T]), will effect the aquifer water.</p>
 <figure class="align-center" id="ditch">
 <a class="reference internal image-reference" href="../../_images/M11_f4.png"><img alt="../../_images/M11_f4.png" src="../../_images/M11_f4.png" style="width: 456.40000000000003px; height: 172.60000000000002px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.11 </span><span class="caption-text">Conceptual model of a flow between two water bodies separated by unconfined aquifer</span><a class="headerlink" href="#ditch" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.12 </span><span class="caption-text">Conceptual model of a flow between two water bodies separated by unconfined aquifer</span><a class="headerlink" href="#ditch" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The conceptual problem can be addressed when assumptions such as steady condition prevails, Darcy’s law in aquifer is valid, recharge rate are relatively low. Based on the these assumptions, one of the <strong>mathematical model</strong> of this conceptual problem is:</p>
@@ -649,10 +672,10 @@ h(0) = h_0 \:\: \text{and} \:\: h(L) = h_L
 h(x) = \sqrt{h_o^2 - (h_o^2 - h_L^2)\cdot \frac{x}{L} + \frac{N}{K}\cdot x \cdot (L-x) }
 \]</div>
 <p>The solution can be used to quantify change in aquifer head <span class="math notranslate nohighlight">\(h\)</span> with different system quantities, e.g., conductivity <span class="math notranslate nohighlight">\(K\)</span> [L/T], recharge <span class="math notranslate nohighlight">\(N\)</span> [L/T] water body heights <span class="math notranslate nohighlight">\(h_0,\, h_L\)</span> [L] along the flow direction.</p>
-<p>The additional tool: <em>Conservative Transport</em> (<span class="xref myst">TOOLS</span>) interactively simulates the ditch flow concept in more details.</p>
+<p>The additional tool: <em>Conservative Transport</em> (<a class="reference internal" href="#/contents/tools/1D_ditchflow"><span class="xref myst">TOOLS</span></a>) interactively simulates the ditch flow concept in more details.</p>
 </section>
 <section id="example-problem">
-<h3><span class="section-number">1.2.4. </span>Example problem<a class="headerlink" href="#example-problem" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">1.2.4. </span>Example problem<a class="headerlink" href="#example-problem" title="Link to this heading">#</a></h3>
 <div class="admonition-ditch-flow admonition">
 <p class="admonition-title">Ditch flow</p>
 <p>Explore the effect of recharge (<span class="math notranslate nohighlight">\(N= 0\)</span> and <span class="math notranslate nohighlight">\(N= 0.1\)</span> mm/d) on the aquifer level for the conceptual problem provided above. Other required data are provided below.
@@ -701,18 +724,18 @@ The resulting head with head is 8.91 m
 </div>
 </section>
 <section id="example-for-a-model-without-analytical-solution">
-<h3><span class="section-number">1.2.5. </span>Example for a Model without Analytical Solution<a class="headerlink" href="#example-for-a-model-without-analytical-solution" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">1.2.5. </span>Example for a Model without Analytical Solution<a class="headerlink" href="#example-for-a-model-without-analytical-solution" title="Link to this heading">#</a></h3>
 <p>Analytical solutions are rather an exception. Natural aquifer or groundwater system are more complex (see figure below) and therefore analytical solution are not possible. The complexity in natural system are due to parameter heterogeneity and irregular model domain boundaries, and these must be included in underlying model equation.</p>
 <figure class="align-center" id="nummodel">
 <a class="reference internal image-reference" href="../../_images/M11_f5.png"><img alt="../../_images/M11_f5.png" src="../../_images/M11_f5.png" style="width: 525.0px; height: 315.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.12 </span><span class="caption-text">The numerical model of a natural aquifer</span><a class="headerlink" href="#nummodel" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.13 </span><span class="caption-text">The numerical model of a natural aquifer</span><a class="headerlink" href="#nummodel" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
 <section id="conceptual-model-to-numerical-approach">
-<h2><span class="section-number">1.3. </span>Conceptual Model to Numerical Approach<a class="headerlink" href="#conceptual-model-to-numerical-approach" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.3. </span>Conceptual Model to Numerical Approach<a class="headerlink" href="#conceptual-model-to-numerical-approach" title="Link to this heading">#</a></h2>
 <p>The first step in modeling is to establish the purpose of the model. With that established, the development of conceptual model begins the set-up of the numerical model. This is a step-wise process that includes:</p>
 <blockquote>
 <div><ol class="arabic simple">
@@ -732,13 +755,13 @@ The resulting head with head is 8.91 m
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../_images/M11_f6.png"><img alt="../../_images/M11_f6.png" src="../../_images/M11_f6.png" style="width: 568.1999999999999px; height: 363.59999999999997px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.13 </span><span class="caption-text">The numerical model of a natural aquifer</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.14 </span><span class="caption-text">The numerical model of a natural aquifer</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The water budgeting part should include the sources of water inflowing to the system including the expected flow directions and exiting water. Estimate of Groundwater recharge, overland flow etc, are few examples of inflows. Likewise, estimate of baseflow to streams, evapotranspiration, abstraction wells etc. are outflows. Field data are required to prepare water budget.</p>
 <p>The type of numerical model, depending on the modeling goal and required/available data, is then decided. The model type is mostly time-related (transient, steady) and dimension-related (1D,2D, 3D).</p>
 <section id="data-requirements">
-<h3><span class="section-number">1.3.1. </span>Data Requirements<a class="headerlink" href="#data-requirements" title="Permalink to this heading">#</a></h3>
+<h3><span class="section-number">1.3.1. </span>Data Requirements<a class="headerlink" href="#data-requirements" title="Link to this heading">#</a></h3>
 <p>Numerical model are often very data intensive. Several types of data of different origin are required in the development of a numerical model. These data come from site data records/maps, field works, lab works and the ancillary mathematical analysis of the field and lab data. Overall, the required data can be:</p>
 <ul class="simple">
 <li><p>topographical maps (with surface waters and water divides)</p></li>
@@ -763,7 +786,7 @@ The resulting head with head is 8.91 m
 </section>
 </section>
 <section id="example-of-a-groundwater-model">
-<h2><span class="section-number">1.4. </span>Example of a Groundwater Model<a class="headerlink" href="#example-of-a-groundwater-model" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.4. </span>Example of a Groundwater Model<a class="headerlink" href="#example-of-a-groundwater-model" title="Link to this heading">#</a></h2>
 <p>Let us now develop an example flow model. To begin with we set-up an overly simplified model that still will require a numerical solution.</p>
 <p><strong>Step 1</strong> - Spatial Extension</p>
 <ul class="simple">
@@ -776,7 +799,7 @@ The resulting head with head is 8.91 m
 <figure class="align-center" id="nummodel-ex">
 <a class="reference internal image-reference" href="../../_images/M11_f7.png"><img alt="../../_images/M11_f7.png" src="../../_images/M11_f7.png" style="width: 588.8000000000001px; height: 226.4px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.14 </span><span class="caption-text">Spatial extension of an example numerical model</span><a class="headerlink" href="#nummodel-ex" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.15 </span><span class="caption-text">Spatial extension of an example numerical model</span><a class="headerlink" href="#nummodel-ex" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The example model is 2D and we <em>assume</em> that vertical flow components can be neglected despite the recharge vertically entering the groundwater. These kinds of simplification are quite common in the development of the numerical model. These simplifications have to be justified when presenting model results.</p>
@@ -802,15 +825,17 @@ The resulting head with head is 8.91 m
 <figure class="align-center" id="concept-model">
 <a class="reference internal image-reference" href="../../_images/M11_f8.png"><img alt="../../_images/M11_f8.png" src="../../_images/M11_f8.png" style="width: 522.75px; height: 296.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1.15 </span><span class="caption-text">The conceptual model of the example model</span><a class="headerlink" href="#concept-model" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 1.16 </span><span class="caption-text">The conceptual model of the example model</span><a class="headerlink" href="#concept-model" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>Step 4</strong> - The numerical approach</p>
 <p>This is discussed in the next lecture.</p>
 <hr class="footnotes docutils" />
-<aside class="footnote brackets" id="darcy-1856" role="note">
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="darcy-1856" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>Darcy, H., Les Fontaines Publiques de la Ville de Dijon, Dalmont, Paris, 1856.</p>
+</aside>
 </aside>
 </section>
 </section>
@@ -842,8 +867,8 @@ The resulting head with head is 8.91 m
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../transport/L10/22_reactive_transport.html"
@@ -871,6 +896,7 @@ The resulting head with head is 8.91 m
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -918,9 +944,10 @@ By Institute of Groud Water -TU Dresden
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -950,8 +977,8 @@ By Institute of Groud Water -TU Dresden
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
