@@ -1,12 +1,13 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../../../" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>4. Aquifer Heterogeneity and Anisotropy &#8212; Groundwater</title>
   
@@ -14,50 +15,54 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=c00225cd" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css?v=dcc31e86" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/.ipynb_checkpoints/custom-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/.ipynb_checkpoints/myfile-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
-    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../../../_static/custom.js"></script>
+    <script src="../../../_static/.ipynb_checkpoints/custom-checkpoint.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../../_static/design-tabs.js"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-RV7RHTCBY3"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -65,23 +70,17 @@
                 gtag('js', new Date());
                 gtag('config', 'G-RV7RHTCBY3');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-RV7RHTCBY3');
-            </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/flow/L5/15_het_iso';</script>
-    <script src="../../../_static/custom.js"></script>
-    <script src="../../../_static/.ipynb_checkpoints/custom-checkpoint.js"></script>
     <link rel="canonical" href="https://github.com/iGW-TU-Dresden/iGW_Book/content/flow/L5/15_het_iso.html" />
-    <link rel="icon" href="../../../_static/logo.ico"/>
+    <link rel="shortcut icon" href="../../../_static/logo.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="5. Steady-State Groundwater flow in 3D" href="../L6/16_darcy_law_3D.html" />
@@ -95,23 +94,28 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
+
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -133,20 +137,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -161,13 +157,9 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
-  
-    
   
 
 <a class="navbar-brand logo" href="../../../intro.html">
-  
   
   
   
@@ -177,23 +169,12 @@
       
     
     
-    <img src="../../../_static/logo.jpg" class="logo__image only-light" alt="Groundwater - Home"/>
-    <script>document.write(`<img src="../../../_static/logo.jpg" class="logo__image only-dark" alt="Groundwater - Home"/>`);</script>
+    <img src="../../../_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -244,15 +225,13 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../tools/decay.html">1. Simulating Mass Budget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/sieve_analysis.html">2. Simulating Seive Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/Darcy_Grad.html">3. Hydraulic Gradient visualised using Darcy Law</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/effective_K.html">4. Simulating Effective hydraulic conductivity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/GW_Vel.html">5. Ground Water Velocity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/uniform_flow_and_well.html">6. Uniform Flow and Well</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/aniso2D.html">7. Simulating the Anisotropy and flow direction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/type_curve_fit.html">8. Type curve and fitting pumping data tool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_advection_dispersion.html">9. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/Kinetics_degradation.html">10. Simulating Kinetics and Degradation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_ditchflow.html">11. Simulating 1D Trench Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/effective_K.html">3. Simulating Effective hydraulic conductivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/uniform_flow_and_well.html">4. Uniform Flow and Well</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/aniso2D.html">5. Simulating the Anisotropy and flow direction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/type_curve_fit.html">6. Type curve and fitting pumping data tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_advection_dispersion.html">7. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/Kinetics_degradation.html">8. Simulating Kinetics and Degradation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_ditchflow.html">9. Simulating 1D Trench Flow</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Previous Years Q&amp;A</span></p>
 <ul class="nav bd-sidenav">
@@ -272,7 +251,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
 
@@ -281,14 +260,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -313,14 +292,14 @@
       
       <li><a href="https://colab.research.google.com/github/iGW-TU-Dresden/iGW_Book/blob/main/content/flow/L5/15_het_iso.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch on Colab"
+   title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
+    <img src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -459,28 +438,26 @@
 </button>
 
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</button>
+</label>
 </div></div>
       
     </div>
@@ -537,25 +514,25 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="aquifer-heterogeneity-and-anisotropy">
-<h1><span class="section-number">4. </span>Aquifer Heterogeneity and Anisotropy<a class="headerlink" href="#aquifer-heterogeneity-and-anisotropy" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">4. </span>Aquifer Heterogeneity and Anisotropy<a class="headerlink" href="#aquifer-heterogeneity-and-anisotropy" title="Permalink to this heading">#</a></h1>
 <p><em>(The contents presented in this section were re-developed principally by <a class="reference external" href="http://web.iitd.ac.in/~chahar/">Prof. B. R. Chahar</a> and Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)</em></p>
 <hr class="docutils" />
 <section id="motivation">
-<h2><span class="section-number">4.1. </span>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.1. </span>Motivation<a class="headerlink" href="#motivation" title="Permalink to this heading">#</a></h2>
 <p>The last lecture introduces aquifer properties such hydraulic conductivity, storativity, porosity. The key assumption in that lecture was that the aquifer is an 1D unit, e.g., the Darcy column, and that its properties do not vary in space. In contrast to these, an aquifer is more accurately represented by a 3D system and its properties vary both in space and directions. In fact variations of hydraulic conductivity (<span class="math notranslate nohighlight">\(K\)</span>), a most critical aquifer quantity, are dominant in most cases. Variations of <span class="math notranslate nohighlight">\(K\)</span> can be observed at very small spatial scales and directions. Thus, aquifer properties that depends on <span class="math notranslate nohighlight">\(K\)</span> also varies. Consequently, aquifer properties such as <span class="math notranslate nohighlight">\(K\)</span> takes a tensor form- a quantity whose magnitude is space and direction dependent.</p>
 <p>In the picture below (<a class="reference internal" href="#aquifer-het"><span class="std std-numref">Fig. 4.1</span></a>) the 3-D spatial variability of aquifer properties is illustrated by a 2-D vertical cross-section. The picture of the outcrop show some form of a layered system, with each layer likely possessing individual subsurface properties.</p>
 <figure class="align-center" id="aquifer-het">
 <a class="reference internal image-reference" href="../../../_images/L5_f1.png"><img alt="../../../_images/L5_f1.png" src="../../../_images/L5_f1.png" style="width: 615.3px; height: 209.29999999999998px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Aquifer Heterogeneity</span><a class="headerlink" href="#aquifer-het" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Aquifer Heterogeneity</span><a class="headerlink" href="#aquifer-het" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="heterogeneity">
-<h2><span class="section-number">4.2. </span>Heterogeneity<a class="headerlink" href="#heterogeneity" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.2. </span>Heterogeneity<a class="headerlink" href="#heterogeneity" title="Permalink to this heading">#</a></h2>
 <p>A solid or a porous medium is <strong>homogeneous</strong> if its property do not vary in space. In contrast, the porous medium is <strong>heterogeneous</strong>, or also sometime termed inhomogeneous, if at least one of its properties varies in space. In groundwater studies, heterogeneity or homogeneity is generally associated with hydraulic conductivity <span class="math notranslate nohighlight">\((K)\)</span> of the aquifer. In many practical applications, properties such as strativity and porosity are treated as spatially constant or homogeneous. This is usually done for two reasons:</p>
 <ul class="simple">
 <li><p>the spatial variability of hydraulic conductivity is much more pronounced than that of storativity and porosity, and</p></li>
@@ -586,7 +563,7 @@ document.write(`
 </ul>
 <p>Heterogeneity play a significant role in controlling the flow of groundwater, but its quantification is more relevant to the transport of chemicals in groundwater.</p>
 <section id="effective-hydraulic-conductivity">
-<h3><span class="section-number">4.2.1. </span>Effective Hydraulic Conductivity<a class="headerlink" href="#effective-hydraulic-conductivity" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.2.1. </span>Effective Hydraulic Conductivity<a class="headerlink" href="#effective-hydraulic-conductivity" title="Permalink to this heading">#</a></h3>
 <p>It is possible to represent the spatial distribution of
 hydraulic conductivity in a heterogeneous aquifer by an <em>average</em>
 value such that steady-state groundwater discharge remains the
@@ -599,14 +576,14 @@ heterogeneous aquifer to be investigated.</p>
 </section>
 </section>
 <section id="layered-systems">
-<h2><span class="section-number">4.3. </span>Layered Systems<a class="headerlink" href="#layered-systems" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.3. </span>Layered Systems<a class="headerlink" href="#layered-systems" title="Permalink to this heading">#</a></h2>
 <section id="case-i-flow-parallel-to-layering">
-<h3><span class="section-number">4.3.1. </span>Case I - Flow Parallel to Layering<a class="headerlink" href="#case-i-flow-parallel-to-layering" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.3.1. </span>Case I - Flow Parallel to Layering<a class="headerlink" href="#case-i-flow-parallel-to-layering" title="Permalink to this heading">#</a></h3>
 <p>A confined aquifer consisting of <span class="math notranslate nohighlight">\(n\)</span> layers is considered. In the set-up (see <a class="reference internal" href="#flow-parallel"><span class="std std-numref">Fig. 4.2</span></a>), the layer boundaries are parallel to each other and groundwater flow is parallel to the layering.</p>
 <figure class="align-center" id="flow-parallel">
 <a class="reference internal image-reference" href="../../../_images/L5_f2.png"><img alt="../../../_images/L5_f2.png" src="../../../_images/L5_f2.png" style="width: 233.0px; height: 370.5px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Flow parallel to layering</span><a class="headerlink" href="#flow-parallel" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Flow parallel to layering</span><a class="headerlink" href="#flow-parallel" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The analysis is required to consider the aquifer as a <em>single entire aquifer unit</em> and a set of <em>layered aquifer unit</em>. Data of both units are to be considered.</p>
@@ -647,7 +624,7 @@ K \approx \frac{\max (m_i\cdot K_i)}{m}
 \]</div>
 </section>
 <section id="example-problem">
-<h3><span class="section-number">4.3.2. </span>Example problem<a class="headerlink" href="#example-problem" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.3.2. </span>Example problem<a class="headerlink" href="#example-problem" title="Permalink to this heading">#</a></h3>
 <div class="admonition-flow-parallel-to-layering admonition">
 <p class="admonition-title">Flow parallel to layering</p>
 <p>Calculate the effective hydraulic conductivity of the layer system consisting of 3 layers if the flow is parallel to the stratification.</p>
@@ -703,12 +680,12 @@ The resulting hydraulic conductivity of the layer system is <span class=" -Color
 </div>
 </section>
 <section id="case-2-flow-perpendicular-to-layering">
-<h3><span class="section-number">4.3.3. </span>Case 2 - Flow Perpendicular to Layering<a class="headerlink" href="#case-2-flow-perpendicular-to-layering" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.3.3. </span>Case 2 - Flow Perpendicular to Layering<a class="headerlink" href="#case-2-flow-perpendicular-to-layering" title="Permalink to this heading">#</a></h3>
 <p>In the second case the the flow <em>perpendicular</em> to the layering is considered. Just as in the <em>parallel</em> flow case, the aquifer in this case also is a confined aquifer with <span class="math notranslate nohighlight">\(n\)</span> layers (see <a class="reference internal" href="#flow-perpendicular"><span class="std std-numref">Fig. 4.3</span></a>).</p>
 <figure class="align-center" id="flow-perpendicular">
 <a class="reference internal image-reference" href="../../../_images/L5_f3.png"><img alt="../../../_images/L5_f3.png" src="../../../_images/L5_f3.png" style="width: 211.5px; height: 364.0px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.3 </span><span class="caption-text">Flow perpendicular to layering</span><a class="headerlink" href="#flow-perpendicular" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.3 </span><span class="caption-text">Flow perpendicular to layering</span><a class="headerlink" href="#flow-perpendicular" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>These data combined with <em>equation of continuity</em> and <em>Darcy’s Law</em> can be used to obtain the effective hydraulic conductivity of the system in which flow is perpendicular to the layers. The following steps are required:</p>
@@ -752,7 +729,7 @@ K \approx \frac{m}{{\max\big(\frac{m_i}{K_i}}\big)}
 \]</div>
 </section>
 <section id="id1">
-<h3><span class="section-number">4.3.4. </span>Example problem<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.3.4. </span>Example problem<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
 <div class="admonition-flow-perpendicular-to-layering admonition">
 <p class="admonition-title">Flow perpendicular to layering</p>
 <p>Calculate the effective hydraulic conductivity of the layer system consisting of 3 layers if the flow is perpendicular to the layering.</p>
@@ -803,7 +780,7 @@ The resulting hydraulic conductivity of the layer system is <span class=" -Color
 </div>
 </section>
 <section id="summary-effective-conductivity-of-layered-aquifers">
-<h3><span class="section-number">4.3.5. </span>Summary: Effective Conductivity of Layered Aquifers<a class="headerlink" href="#summary-effective-conductivity-of-layered-aquifers" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.3.5. </span>Summary: Effective Conductivity of Layered Aquifers<a class="headerlink" href="#summary-effective-conductivity-of-layered-aquifers" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p><strong>For flow parallel to layering:</strong> <br>
 Effective hydraulic conductivity equals the <em>weighted arithmetic mean</em> of layer conductivities.</p></li>
@@ -824,7 +801,7 @@ Apart from this very special case, we have</p></li>
 </section>
 </section>
 <section id="hydraulic-resistance">
-<h2><span class="section-number">4.4. </span>Hydraulic Resistance<a class="headerlink" href="#hydraulic-resistance" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.4. </span>Hydraulic Resistance<a class="headerlink" href="#hydraulic-resistance" title="Permalink to this heading">#</a></h2>
 <p>The <em>Hydraulic Resistance</em> <span class="math notranslate nohighlight">\((R)\)</span> provide an alternative approach to express conductivity. It is defined as a reciprocal to hydraulic conductivity <span class="math notranslate nohighlight">\((K)\)</span>, i.e.,</p>
 <div class="math notranslate nohighlight">
 \[
@@ -847,7 +824,7 @@ highest hydraulic conductivity (smallest hydraulic resistance). In this case, th
 mean of layer conductivities. This leads to Effective hydraulic resistance equaling the weighted arithmetic mean of layer resistances.</p>
 <p>Similar to the <em>flow parallel to the layering,</em> if all layer thicknesses are identical (<span class="math notranslate nohighlight">\(m_i =\)</span> const.) and flow is perpendicular to layering, the largest hydraulic gradient is across the layer with lowest hydraulic conductivity (highest hydraulic resistance). In this case, the <em>head gradient</em> across each layer is proportional to layer resistance or inversely proportional to layer conductivity.</p>
 <section id="id2">
-<h3><span class="section-number">4.4.1. </span>Example problem<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.4.1. </span>Example problem<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
 <div class="admonition-hydraulic-resistance admonition">
 <p class="admonition-title">Hydraulic Resistance</p>
 <p>Find the hydraulic resistance with the given hydraulic counductivity</p>
@@ -881,31 +858,31 @@ The resulting hydraulic resistance is <span class=" -Color -Color-Bold">2.0e+03 
 </section>
 </section>
 <section id="aquifer-anisotropy">
-<h2><span class="section-number">4.5. </span>Aquifer Anisotropy<a class="headerlink" href="#aquifer-anisotropy" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.5. </span>Aquifer Anisotropy<a class="headerlink" href="#aquifer-anisotropy" title="Permalink to this heading">#</a></h2>
 <p>A solid or a porous medium is <strong>isotropic</strong> if its (all) properties are independent of <em>direction.</em> Conversely, a solid or a porous medium is <strong>anisotropic</strong> if at least one of its property is dependent on direction. Thus, isotropic (or anisotropic) property of porous media refines the concept of homogeneity (or heterogeneity). The key difference being that anisotropy of aquifer is associated only with hydraulic conductivity as other aquifer properties like storativity or porosity cannot depend on direction. Groundwater flow (and more so solute transport) is affected by anisotropy. However, in unconsolidated aquifers the impact of heterogeneity is usually more important.</p>
 <p>Figure below (<a class="reference internal" href="#iso-anisotropy"><span class="std std-numref">Fig. 4.4</span></a>) explains the concept of isotropy more clearly. The direction dependency of <span class="math notranslate nohighlight">\(K\)</span> is represented by the arrows diagram.</p>
 <figure class="align-center" id="iso-anisotropy">
 <a class="reference internal image-reference" href="../../../_images/L5_f4.png"><img alt="../../../_images/L5_f4.png" src="../../../_images/L5_f4.png" style="width: 637.2px; height: 421.6px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.4 </span><span class="caption-text">Isotropy and Anisotropy in aquifers</span><a class="headerlink" href="#iso-anisotropy" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.4 </span><span class="caption-text">Isotropy and Anisotropy in aquifers</span><a class="headerlink" href="#iso-anisotropy" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <section id="anisotropy-and-scale-effects">
-<h3><span class="section-number">4.5.1. </span>Anisotropy and scale effects<a class="headerlink" href="#anisotropy-and-scale-effects" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.5.1. </span>Anisotropy and scale effects<a class="headerlink" href="#anisotropy-and-scale-effects" title="Permalink to this heading">#</a></h3>
 <p>The effective hydraulic conductivity of layered aquifers was shown earlier to depend on the orientation of the flow direction relative to layering, i.e., parallel versus perpendicular. On a larger scale, it may not be possible to identify or resolve heterogeneities associated with example thin layers, small lenses, shape and orientation of grains (see figure above). Nevertheless, <span class="math notranslate nohighlight">\(K\)</span> is found to be direction-dependent when groundwater flow is quantified at the larger scale. In these case, small-scale heterogeneity (e.g., due to layering) expresses itself as anisotropy of hydraulic conductivity at the larger scale.</p>
 </section>
 <section id="indices-and-functional-arguments-to-describe-anisotropy">
-<h3><span class="section-number">4.5.2. </span>Indices and functional arguments to describe anisotropy<a class="headerlink" href="#indices-and-functional-arguments-to-describe-anisotropy" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.5.2. </span>Indices and functional arguments to describe anisotropy<a class="headerlink" href="#indices-and-functional-arguments-to-describe-anisotropy" title="Permalink to this heading">#</a></h3>
 <p>One could consider heterogeneity as a property of entirety. While function arguments point towards heterogeneity, <em>indices</em> are
 used to express that hydraulic conductivity depends on direction. Considering a 3-D Cartesian coordinate system, the directional dependent hydraulic conductivity can be represented by <span class="math notranslate nohighlight">\(K_x\)</span>, <span class="math notranslate nohighlight">\(K_y\)</span> and <span class="math notranslate nohighlight">\(K_z\)</span> in parallel with the <span class="math notranslate nohighlight">\(x-\)</span>, <span class="math notranslate nohighlight">\(y-\)</span> and <span class="math notranslate nohighlight">\(z-\)</span>axis, respectively. Within these, one could distinguish between horizontal conductivities (<span class="math notranslate nohighlight">\(K_x\)</span> and <span class="math notranslate nohighlight">\(K_y\)</span>) with the vertical conductivity <span class="math notranslate nohighlight">\(K_z\)</span>. More often, anisotropy is observed only between horizontal and vertical directions (i.e., along <span class="math notranslate nohighlight">\(x\)</span> or <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> directions), while isotropy is observed along horizontal directions (<span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> direction). Thus, symbols <span class="math notranslate nohighlight">\(K_h\)</span> representing <span class="math notranslate nohighlight">\(K_x = K_y\)</span> and <span class="math notranslate nohighlight">\(K_v\)</span> representing <span class="math notranslate nohighlight">\(K_z\)</span> can be used to denote horizontal and vertical hydraulic conductivity, respectively.</p>
 </section>
 <section id="concept-of-the-hydraulic-conductivity-ellipse">
-<h3><span class="section-number">4.5.3. </span>Concept of the hydraulic conductivity ellipse<a class="headerlink" href="#concept-of-the-hydraulic-conductivity-ellipse" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.5.3. </span>Concept of the hydraulic conductivity ellipse<a class="headerlink" href="#concept-of-the-hydraulic-conductivity-ellipse" title="Permalink to this heading">#</a></h3>
 <p>Let us consider an aquifer with horizontal conductivity <span class="math notranslate nohighlight">\(K_h\)</span> and vertical hydraulic conductivity <span class="math notranslate nohighlight">\(K_v\)</span>. Let us assume that the flow in the aquifer is in some arbitrary direction characterized by the angle <span class="math notranslate nohighlight">\(\theta\)</span> between the flow direction and horizontal plane (see <a class="reference internal" href="#k-ellipse"><span class="std std-numref">Fig. 4.5</span></a>).</p>
 <figure class="align-center" id="k-ellipse">
 <a class="reference internal image-reference" href="../../../_images/L5_f5.png"><img alt="../../../_images/L5_f5.png" src="../../../_images/L5_f5.png" style="width: 469.70000000000005px; height: 249.15000000000003px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.5 </span><span class="caption-text">hydraulic conductivity ellipse</span><a class="headerlink" href="#k-ellipse" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.5 </span><span class="caption-text">hydraulic conductivity ellipse</span><a class="headerlink" href="#k-ellipse" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In this case, it can be shown that the effective hydraulic conductivity <span class="math notranslate nohighlight">\(K\)</span> is</p>
@@ -916,7 +893,7 @@ K = \frac{1}{\frac{\cos^2\theta}{K_h}+\frac{\sin^2\theta}{K_v}}
 <p>If the angle <span class="math notranslate nohighlight">\(\theta\)</span> is varied, the above equation defines an ellipse (also called “hydraulic conductivity ellipse”) with semi-axes equal to <span class="math notranslate nohighlight">\(\surd{K_h}\)</span> and <span class="math notranslate nohighlight">\(\surd{K_v}\)</span>, respectively. The square root of <span class="math notranslate nohighlight">\(K\)</span> can be visualised by the length of a line segment parallel to the direction of flow. This line segment extends from the centre to the perimeter of the ellipse.</p>
 </section>
 <section id="id3">
-<h3><span class="section-number">4.5.4. </span>Example problem<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<h3><span class="section-number">4.5.4. </span>Example problem<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
 <div class="admonition-hydraulic-resistance admonition">
 <p class="admonition-title">Hydraulic Resistance</p>
 <p>Find resulting hydraulic conductivity from provided horizontal and vertical conductivities.</p>
@@ -953,23 +930,23 @@ The resulting hydraulic conductivity is <span class=" -Color -Color-Bold">6.2e-0
 </section>
 </section>
 <section id="combining-heterogeneity-and-anisotropy">
-<h2><span class="section-number">4.6. </span>Combining Heterogeneity and Anisotropy<a class="headerlink" href="#combining-heterogeneity-and-anisotropy" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.6. </span>Combining Heterogeneity and Anisotropy<a class="headerlink" href="#combining-heterogeneity-and-anisotropy" title="Permalink to this heading">#</a></h2>
 <p>The distinction between_Homogeneous, Heterogeneous, isotropic and anisotropic aquifer or any combination of them can be more clearly understood from the figure (for vertical <span class="math notranslate nohighlight">\(x-z\)</span> plane).</p>
 <figure class="align-center" id="het-aniso">
 <a class="reference internal image-reference" href="../../../_images/L5_f6.png"><img alt="../../../_images/L5_f6.png" src="../../../_images/L5_f6.png" style="width: 705.6500000000001px; height: 523.0500000000001px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4.6 </span><span class="caption-text">Heterogeneity and Anisotropy in aquifer</span><a class="headerlink" href="#het-aniso" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 4.6 </span><span class="caption-text">Heterogeneity and Anisotropy in aquifer</span><a class="headerlink" href="#het-aniso" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="additional-material">
-<h2><span class="section-number">4.7. </span>Additional Material<a class="headerlink" href="#additional-material" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.7. </span>Additional Material<a class="headerlink" href="#additional-material" title="Permalink to this heading">#</a></h2>
 <div class="toggle docutils container">
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSV04S9lhhZF2brpVIleI_UJYLVbrErYTtzE_XAY97ypV4QsGUpzkqxJ0BB3AZhpA/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </div>
 </section>
 <section id="chapter-quiz">
-<h2><span class="section-number">4.8. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">4.8. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input tag_hide-output docutils container">
 <details class="hide above-output">
 <summary aria-label="Toggle hidden content">
@@ -1950,8 +1927,8 @@ if (typeof version == 'undefined') {
               
               
               
-                <footer class="prev-next-footer d-print-none">
-                  
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../L4/14_darcy_law_K.html"
@@ -1979,7 +1956,6 @@ if (typeof version == 'undefined') {
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -2035,10 +2011,9 @@ By Institute of Groud Water -TU Dresden
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2022.
       <br/>
     
   </p>
@@ -2068,8 +2043,8 @@ By Institute of Groud Water -TU Dresden
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>

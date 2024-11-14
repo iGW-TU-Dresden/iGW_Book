@@ -1,12 +1,13 @@
 
+
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../../../" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>2. Reactive Mass Transport &#8212; Groundwater</title>
   
@@ -14,50 +15,54 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=a3416100" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=13237357" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=c00225cd" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css?v=dcc31e86" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/.ipynb_checkpoints/custom-checkpoint.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/.ipynb_checkpoints/myfile-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
-    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script src="../../../_static/custom.js"></script>
+    <script src="../../../_static/.ipynb_checkpoints/custom-checkpoint.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../../_static/design-tabs.js"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-RV7RHTCBY3"></script>
     <script>
                 window.dataLayer = window.dataLayer || [];
@@ -65,23 +70,17 @@
                 gtag('js', new Date());
                 gtag('config', 'G-RV7RHTCBY3');
             </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-RV7RHTCBY3');
-            </script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/transport/L10/22_reactive_transport';</script>
-    <script src="../../../_static/custom.js"></script>
-    <script src="../../../_static/.ipynb_checkpoints/custom-checkpoint.js"></script>
     <link rel="canonical" href="https://github.com/iGW-TU-Dresden/iGW_Book/content/transport/L10/22_reactive_transport.html" />
-    <link rel="icon" href="../../../_static/logo.ico"/>
+    <link rel="shortcut icon" href="../../../_static/logo.ico"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="1. Background of Groundwater Modeling" href="../../modeling/31_intro_modeling.html" />
@@ -95,23 +94,28 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
+
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -133,20 +137,12 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-    </header>
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
   
-
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
-      
-      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -161,13 +157,9 @@
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
-  
-    
   
 
 <a class="navbar-brand logo" href="../../../intro.html">
-  
   
   
   
@@ -177,23 +169,12 @@
       
     
     
-    <img src="../../../_static/logo.jpg" class="logo__image only-light" alt="Groundwater - Home"/>
-    <script>document.write(`<img src="../../../_static/logo.jpg" class="logo__image only-dark" alt="Groundwater - Home"/>`);</script>
+    <img src="../../../_static/logo.jpg" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../../_static/logo.jpg" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -244,15 +225,13 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../tools/decay.html">1. Simulating Mass Budget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tools/sieve_analysis.html">2. Simulating Seive Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/Darcy_Grad.html">3. Hydraulic Gradient visualised using Darcy Law</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/effective_K.html">4. Simulating Effective hydraulic conductivity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/GW_Vel.html">5. Ground Water Velocity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/uniform_flow_and_well.html">6. Uniform Flow and Well</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/aniso2D.html">7. Simulating the Anisotropy and flow direction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/type_curve_fit.html">8. Type curve and fitting pumping data tool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_advection_dispersion.html">9. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/Kinetics_degradation.html">10. Simulating Kinetics and Degradation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_ditchflow.html">11. Simulating 1D Trench Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/effective_K.html">3. Simulating Effective hydraulic conductivity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/uniform_flow_and_well.html">4. Uniform Flow and Well</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/aniso2D.html">5. Simulating the Anisotropy and flow direction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/type_curve_fit.html">6. Type curve and fitting pumping data tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_advection_dispersion.html">7. Tool for simulating 1D Conservative Transport (Laboratory Column)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/Kinetics_degradation.html">8. Simulating Kinetics and Degradation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/1D_ditchflow.html">9. Simulating 1D Trench Flow</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Previous Years Q&amp;A</span></p>
 <ul class="nav bd-sidenav">
@@ -272,7 +251,7 @@
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
 
@@ -281,14 +260,14 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -313,14 +292,14 @@
       
       <li><a href="https://colab.research.google.com/github/iGW-TU-Dresden/iGW_Book/blob/main/content/transport/L10/22_reactive_transport.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch on Colab"
+   title="Launch onColab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
+    <img src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -459,28 +438,26 @@
 </button>
 
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
-
 <script>
 document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</button>
+</label>
 </div></div>
       
     </div>
@@ -529,16 +506,16 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article">
+                <article class="bd-article" role="main">
                   
   <div class="cell tag_hide-input tag_remove-input docutils container">
 </div>
 <section id="reactive-mass-transport">
-<h1><span class="section-number">2. </span>Reactive Mass Transport<a class="headerlink" href="#reactive-mass-transport" title="Link to this heading">#</a></h1>
+<h1><span class="section-number">2. </span>Reactive Mass Transport<a class="headerlink" href="#reactive-mass-transport" title="Permalink to this heading">#</a></h1>
 <p><em>(The contents presented in this section were re-developed principally by Dr. P. K. Yadav. The original contents are from Prof. Rudolf Liedl)</em></p>
 <hr class="docutils" />
 <section id="motivation">
-<h2><span class="section-number">2.1. </span>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.1. </span>Motivation<a class="headerlink" href="#motivation" title="Permalink to this heading">#</a></h2>
 <p>The last lecture dealt with the  conservative transport processes and  quantified the mass flow and flux emanating from those processes. The effects of these processes were evaluated as an isolated processes and as joint transport process.</p>
 <div class="admonition-important-conclusions-from-last-lecture admonition">
 <p class="admonition-title">Important conclusions from last lecture</p>
@@ -557,7 +534,7 @@ document.write(`
 <p>The lecture will, however, first deal with 3-D effects of dispersive process, which is more important to quantify the reactive processes.</p>
 </section>
 <section id="dispersive-mass-flow-in-3-d">
-<h2><span class="section-number">2.2. </span>Dispersive Mass Flow in 3-D<a class="headerlink" href="#dispersive-mass-flow-in-3-d" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.2. </span>Dispersive Mass Flow in 3-D<a class="headerlink" href="#dispersive-mass-flow-in-3-d" title="Permalink to this heading">#</a></h2>
 <p>In the last lecture we saw that concentration gradient <span class="math notranslate nohighlight">\(\frac{\Delta C}{\Delta L}\)</span> and flow velocity <span class="math notranslate nohighlight">\(v\)</span> drives dispersive and diffusive solute transport processes.</p>
 <p>However, in the natural aquifers <span class="math notranslate nohighlight">\(\frac{\Delta C}{\Delta L}\)</span> is normally varying with space <span class="math notranslate nohighlight">\((x,y,z)\)</span> and time <span class="math notranslate nohighlight">\((t)\)</span>. Therefore, a differential operator <span class="math notranslate nohighlight">\(\big(\frac{\mathrm{d}}{\mathrm{d} x}\big)\)</span> is more suitable representation of gradient than the difference operator <span class="math notranslate nohighlight">\(\frac{\Delta C}{\Delta x}\)</span>. The differential operator also generalizes the gradient case.</p>
 <p>Considering the differential operator, the diffusive mass flow and diffusive mass flux (= mass flow per unit area) in 1D is then expressed as:</p>
@@ -578,10 +555,10 @@ J_{disp, h} = - n_e \cdot A \cdot D_{disp} \cdot \frac{\mathrm{d} C}{\mathrm{d}x
 \[
 j_{disp, h} = - n_e \cdot D_{disp} \cdot \frac{\mathrm{d} C}{\mathrm{d}x} 
 \]</div>
-<p>The examples of these relations are presented in the last lecture <a class="reference internal" href="#/contents/transport/lecture_09/21_conservative_transport"><span class="xref myst">Conservative Transport</span></a></p>
+<p>The examples of these relations are presented in the last lecture <span class="xref myst">Conservative Transport</span></p>
 </section>
 <section id="d-concentration-gradient">
-<h2><span class="section-number">2.3. </span>3-D concentration Gradient<a class="headerlink" href="#d-concentration-gradient" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.3. </span>3-D concentration Gradient<a class="headerlink" href="#d-concentration-gradient" title="Permalink to this heading">#</a></h2>
 <p>The concentration gradient  <span class="math notranslate nohighlight">\(\frac{\mathrm{d}C}{\mathrm{d}x}\)</span>  for 1-D solute transport problems is uni-directional, i.e, direction is fixed, and thus only the magnitude of the gradient is the important factor. However in higher dimensions, 2-D or 3-D, solute transport problems, the <em>direction</em> of gradient along with it’s <em>magnitude</em> in that direction has to be specified. Thus, for higher dimension solute transport problems, the <em>concentration gradient</em> becomes <strong>concentration vector</strong>, i.e., a quantity providing both magnitude and direction.</p>
 <p>Thus, the representation of concentration gradient in Cartesian coordinate in 2-D and 3-D is:</p>
 <div class="math notranslate nohighlight">
@@ -603,7 +580,7 @@ j_{disp, h} = - n_e \cdot D_{disp} \cdot \frac{\mathrm{d} C}{\mathrm{d}x}
 <p>The <span class="math notranslate nohighlight">\(\nabla\)</span>, the inverted Delta symbol, is called the <strong>del</strong> or <strong>nabla</strong> operator. The vector <strong>grad <span class="math notranslate nohighlight">\(C\)</span></strong> in the above relations points in the direction of the <em>steepest increase</em> of <span class="math notranslate nohighlight">\(C\)</span>. However, for the <strong>Hydrogeologists</strong>, the concentration gradients as well the grad <span class="math notranslate nohighlight">\(C\)</span> points to the <em>steepest decrease</em> of <span class="math notranslate nohighlight">\(C\)</span>.</p>
 </section>
 <section id="isotropic-and-anisotropic-dispersion">
-<h2><span class="section-number">2.4. </span>Isotropic and Anisotropic  Dispersion<a class="headerlink" href="#isotropic-and-anisotropic-dispersion" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.4. </span>Isotropic and Anisotropic  Dispersion<a class="headerlink" href="#isotropic-and-anisotropic-dispersion" title="Permalink to this heading">#</a></h2>
 <p>Corresponding the expression for the concentration gradient at higher dimensions, the expression for mass flow and flux becomes:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -694,7 +671,7 @@ D_{hyd} = \alpha \cdot |v| + n_e \cdot D
 </div>
 </section>
 <section id="equilibrium-sorption">
-<h2><span class="section-number">2.5. </span>Equilibrium Sorption<a class="headerlink" href="#equilibrium-sorption" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.5. </span>Equilibrium Sorption<a class="headerlink" href="#equilibrium-sorption" title="Permalink to this heading">#</a></h2>
 <p>A reactive transport system can include a single reactive process, e.g., degradation, or combination of several multiple reactive processes, e.g. degradation and sorption. The inclusion of the reactive process(es) in the transport studies are site specific. The important to note is that an inclusion of a reactive process increases the complexity of transport problem.</p>
 <p>In this course we limit ourselves with the following two types of reaction processes:</p>
 <p><strong>1. Sorption</strong></p>
@@ -703,14 +680,14 @@ D_{hyd} = \alpha \cdot |v| + n_e \cdot D
 <p>Also an important distinction is the rate or speed of the reaction. One distinguishes between time-dependent reaction (kinetics) or time-independent reactions (steady-state or equilibrium). Special reaction rates such as instantaneous reaction (extremely fast reaction) can also be part of the reaction process in the transport system.</p>
 </section>
 <section id="sorption-basics">
-<h2><span class="section-number">2.6. </span>Sorption Basics<a class="headerlink" href="#sorption-basics" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.6. </span>Sorption Basics<a class="headerlink" href="#sorption-basics" title="Permalink to this heading">#</a></h2>
 <p><strong>Sorption</strong> is a rather a general term used to indicate both <strong>adsorption</strong> and <strong>absorption</strong>. But in this course the <em>sorption</em> refers to only <em>adsorption.</em></p>
 <p><strong>Adsorption</strong> can be more formally defined as the process of accumulation of dissolved chemicals on the surface of a solid, e.g., accumulation of a chemicals dissolved in groundwater on the surface of the aquifer material.</p>
 <p>The figure below clarifies the <em>adsorption</em> process.</p>
 <figure class="align-center" id="sorption">
 <a class="reference internal image-reference" href="../../../_images/T10_f1.png"><img alt="../../../_images/T10_f1.png" src="../../../_images/T10_f1.png" style="width: 294.9px; height: 274.8px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.1 </span><span class="caption-text">Sorption terminology</span><a class="headerlink" href="#sorption" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.1 </span><span class="caption-text">Sorption terminology</span><a class="headerlink" href="#sorption" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>In the figure <em>chemical in solution</em> (the circular objects) more often called <strong>solute</strong> in the water is found to attach is the solid surface. The figure presents the following two important terms part of the adsorption process:</p>
@@ -729,7 +706,7 @@ D_{hyd} = \alpha \cdot |v| + n_e \cdot D
 <p>Adsorption in groundwater is often a rapid process. Although sorption kinetics can be important, the description in this introductory level course is limited to equilibrium sorption. Thus, we learn next to quantify equilibrium sorption.</p>
 </section>
 <section id="adsorption-isotherms">
-<h2><span class="section-number">2.7. </span>Adsorption Isotherms<a class="headerlink" href="#adsorption-isotherms" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.7. </span>Adsorption Isotherms<a class="headerlink" href="#adsorption-isotherms" title="Permalink to this heading">#</a></h2>
 <p>The adsorption process that has reached equilibrium can be relatively easily quantified with the use of empirical models called <strong>isotherms</strong>. These models are often simple algebraic equation that relates solute concentrations partitioned between the adsorbate and adsorbent at constant temperature. More than 15 different <em>isotherm</em> models can be found in the literature. However, in groundwater reactive transport studies the following three are the two most commonly used isotherms:</p>
 <ol class="arabic simple">
 <li><p><strong>Henry or Linear isotherm</strong> <br></p></li>
@@ -739,12 +716,12 @@ D_{hyd} = \alpha \cdot |v| + n_e \cdot D
 <figure class="align-center" id="sorption-type">
 <a class="reference internal image-reference" href="../../../_images/T10_f2.png"><img alt="../../../_images/T10_f2.png" src="../../../_images/T10_f2.png" style="width: 351.6px; height: 286.8px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.2 </span><span class="caption-text">Different types of sorption isotherms</span><a class="headerlink" href="#sorption-type" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.2 </span><span class="caption-text">Different types of sorption isotherms</span><a class="headerlink" href="#sorption-type" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="henry-isotherm">
-<h2><span class="section-number">2.8. </span>Henry Isotherm<a class="headerlink" href="#henry-isotherm" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.8. </span>Henry Isotherm<a class="headerlink" href="#henry-isotherm" title="Permalink to this heading">#</a></h2>
 <p>The <strong>Henry isotherm</strong> (Henry, 1803) is based on the idea of a <em>linear</em> relationship between the solute concentration <strong><span class="math notranslate nohighlight">\(C\)</span></strong> and the <em>adsorbate:adsorbent</em> mass ratio <span class="math notranslate nohighlight">\(C_a\)</span>. Henry isotherm is quite often also called <em>linear isotherm</em> or the <span class="math notranslate nohighlight">\(K_d\)</span> model. Mathematically, the Henry isotherm is:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -801,7 +778,7 @@ The required partition coefficient = slope,= 0.192 L/g
 </div>
 </section>
 <section id="freundlich-isotherm">
-<h2><span class="section-number">2.9. </span>Freundlich Isotherm<a class="headerlink" href="#freundlich-isotherm" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.9. </span>Freundlich Isotherm<a class="headerlink" href="#freundlich-isotherm" title="Permalink to this heading">#</a></h2>
 <p><strong>Freundlich isotherm</strong> (Freundlich, 1907) is a more general isotherm. It is based on the idea of a power law, i.e., includes also the non-linear behaviour, relating the solute concentration <span class="math notranslate nohighlight">\(C\)</span> to the adsorbate:adsorbent mass ration <span class="math notranslate nohighlight">\(C_a\)</span>. The isotherm is mathematically given as</p>
 <div class="math notranslate nohighlight">
 \[
@@ -869,13 +846,13 @@ Freundlich partitioning coefficient =  191.8 (mg/g)1/n (mg/L) and  Freundlich ex
 </div>
 </section>
 <section id="retardation-factor-for-henry-isotherm">
-<h2><span class="section-number">2.10. </span>Retardation Factor (for Henry Isotherm)<a class="headerlink" href="#retardation-factor-for-henry-isotherm" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.10. </span>Retardation Factor (for Henry Isotherm)<a class="headerlink" href="#retardation-factor-for-henry-isotherm" title="Permalink to this heading">#</a></h2>
 <p>The net effect of adsorption is the retarded movement of solute in comparison to the average flow of the groundwater. The term <strong>Retardation Factor</strong> <span class="math notranslate nohighlight">\((R)\)</span> is defined that quantifies the retarded movement of solute. The formulation of <span class="math notranslate nohighlight">\(R\)</span> is based on the type of isotherm. For Henry isotherm <span class="math notranslate nohighlight">\(R\)</span> can be straightforwardly calculated with the help of a mass budget.</p>
 <p>For this purpose, an aquifer volume <span class="math notranslate nohighlight">\(V\)</span> with the effective porosity <span class="math notranslate nohighlight">\(n_e\)</span> is considered (see fig. below)</p>
 <figure class="align-center" id="retardation">
 <a class="reference internal image-reference" href="../../../_images/T10_f3.png"><img alt="../../../_images/T10_f3.png" src="../../../_images/T10_f3.png" style="width: 330.4px; height: 210.7px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.3 </span><span class="caption-text">Retardation factor</span><a class="headerlink" href="#retardation" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.3 </span><span class="caption-text">Retardation factor</span><a class="headerlink" href="#retardation" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The steps involved are:</p>
@@ -934,7 +911,7 @@ The resulting retardation factor is <span class=" -Color -Color-Bold">1.375</spa
 </div>
 </section>
 <section id="degradation">
-<h2><span class="section-number">2.11. </span>Degradation<a class="headerlink" href="#degradation" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.11. </span>Degradation<a class="headerlink" href="#degradation" title="Permalink to this heading">#</a></h2>
 <p><strong>Degradation</strong> leads to alteration or transformation of chemical structure of chemicals. This contrasts to adsorption in which chemical structure is not altered. In adsorption (or desorption) the original chemical is partitioned between the solid particles and water. It is <em>degradation</em> that eventually lead to removal of the <em>original</em> chemical from the groundwater. The transformation of original chemical, due to degradation, results to so-called <em>daughter products (metabolites).</em> The new chemical(s) can make groundwater more suitable (decrease contamination) or further contaminate it.</p>
 <p>In groundwater studies, degradation can appear as:</p>
 <ul class="simple">
@@ -946,7 +923,7 @@ The resulting retardation factor is <span class=" -Color -Color-Bold">1.375</spa
 A common aspect to most of them is the assumption of <em>time-dependency</em> (or <em>Kinetics</em> ).</p>
 </section>
 <section id="n-th-order-degradation-kinetics">
-<h2><span class="section-number">2.12. </span><span class="math notranslate nohighlight">\(n^{th}\)</span> - Order Degradation Kinetics<a class="headerlink" href="#n-th-order-degradation-kinetics" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.12. </span><span class="math notranslate nohighlight">\(n^{th}\)</span> - Order Degradation Kinetics<a class="headerlink" href="#n-th-order-degradation-kinetics" title="Permalink to this heading">#</a></h2>
 <p>The general equation for the degradation kinetics is:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1031,7 +1008,7 @@ T_{1/2} = \frac{\ln 2}{\lambda} \:\:\: \text{for } \:1^{\text{st}}\text{-order}
 </div>
 </section>
 <section id="radioactive-decay">
-<h2><span class="section-number">2.13. </span>Radioactive decay<a class="headerlink" href="#radioactive-decay" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.13. </span>Radioactive decay<a class="headerlink" href="#radioactive-decay" title="Permalink to this heading">#</a></h2>
 <p>Radioactive decay is degradation of a chemical due to radiation. The radioactive decay is limited to radioactive chemicals such as Cobalt, Cesium, Iodine. This decay obeys the 1<span class="math notranslate nohighlight">\(^\text{st}\)</span>- order degradation kinetics and therefore the half-life is <span class="math notranslate nohighlight">\(T_{1/2} = \frac{\ln 2}{\lambda}\)</span>. <span class="math notranslate nohighlight">\(T_{1/2}\)</span> is characteristic property of radioactive chemicals and it can be used to compute degradation rate (<span class="math notranslate nohighlight">\(\lambda\)</span>).</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
@@ -1089,15 +1066,15 @@ T_{1/2} = \frac{\ln 2}{\lambda} \:\:\: \text{for } \:1^{\text{st}}\text{-order}
 </div>
 </section>
 <section id="joint-action-of-conservative-and-reactive-transport-1d">
-<h2><span class="section-number">2.14. </span>Joint Action of Conservative and Reactive Transport (1D)<a class="headerlink" href="#joint-action-of-conservative-and-reactive-transport-1d" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.14. </span>Joint Action of Conservative and Reactive Transport (1D)<a class="headerlink" href="#joint-action-of-conservative-and-reactive-transport-1d" title="Permalink to this heading">#</a></h2>
 </section>
 <section id="concentration-profile">
-<h2><span class="section-number">2.15. </span>Concentration Profile<a class="headerlink" href="#concentration-profile" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.15. </span>Concentration Profile<a class="headerlink" href="#concentration-profile" title="Permalink to this heading">#</a></h2>
 <p>Figure below presents the joint action of conservative transport with equilibrium sorption (linear isotherm) and degradation. The figure shows the solute concentration <span class="math notranslate nohighlight">\(C\)</span> (in water) at the same time-levels for various combinations of acting processes.</p>
 <figure class="align-center" id="d-cons-react">
 <a class="reference internal image-reference" href="../../../_images/T10_f4.png"><img alt="../../../_images/T10_f4.png" src="../../../_images/T10_f4.png" style="width: 274.2px; height: 583.1999999999999px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.4 </span><span class="caption-text">1D Conservative and Reactive Transport</span><a class="headerlink" href="#d-cons-react" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.4 </span><span class="caption-text">1D Conservative and Reactive Transport</span><a class="headerlink" href="#d-cons-react" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The figure can be explained in the following way:</p>
@@ -1108,7 +1085,7 @@ T_{1/2} = \frac{\ln 2}{\lambda} \:\:\: \text{for } \:1^{\text{st}}\text{-order}
 <p>(E): The inclusion of retardation along with degradation and conservative transport process leads to high removal of chemical from water.</p>
 </section>
 <section id="breakthrough-curve">
-<h2><span class="section-number">2.16. </span>Breakthrough Curve<a class="headerlink" href="#breakthrough-curve" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.16. </span>Breakthrough Curve<a class="headerlink" href="#breakthrough-curve" title="Permalink to this heading">#</a></h2>
 <p>Breakthrough curves provide a <em>time-dependent</em> spread of chemicals in the groundwater. The inclusion of multiple processes are normally solved using numerical models. Analytical models are available for limited processes and simplified problems. A 1-D analytical solution by Kinzelbach (1987) provide a transient (time-dependent) solution of reactive transport problem with inclusion of equilibrium linear sorption represented by retardation <span class="math notranslate nohighlight">\((R)\)</span>, first-order degradation rate <span class="math notranslate nohighlight">\((\lambda)\)</span> and the conservative transport quantities - dispersion <span class="math notranslate nohighlight">\((D)\)</span> and advection. The solution is given as:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1189,7 +1166,7 @@ erfc() = represents the complementary error function <a class="reference externa
 </div>
 </section>
 <section id="mass-re-distribution-during-injection-extraction">
-<h2><span class="section-number">2.17. </span>Mass (Re-)Distribution During Injection / Extraction<a class="headerlink" href="#mass-re-distribution-during-injection-extraction" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.17. </span>Mass (Re-)Distribution During Injection / Extraction<a class="headerlink" href="#mass-re-distribution-during-injection-extraction" title="Permalink to this heading">#</a></h2>
 <p><strong>Consider a scenario</strong>:</p>
 <p>Water is <em>injected</em> into a certain portion of an aquifer with total volume <span class="math notranslate nohighlight">\(V\)</span>, bulk density <span class="math notranslate nohighlight">\(\rho_b\)</span> and effective porosity <span class="math notranslate nohighlight">\(n_e\)</span>. Assume that the injected water contains a chemical of total mass <span class="math notranslate nohighlight">\(M\)</span>, which is adsorbed by the aquifer materials under equilibrium conditions according to Henry isotherm (quantified by <span class="math notranslate nohighlight">\(K_d\)</span>$).</p>
 <p>Bases on the assumption of sorption equilibrium, the total mass <span class="math notranslate nohighlight">\(M\)</span> of the chemical is instantaneously(!) split up into a dissolved and a sorbed part. In such case, the mass distribution can be computed as follows (with <span class="math notranslate nohighlight">\(R\)</span> = retardation factor, <span class="math notranslate nohighlight">\(\rho_b\)</span>
@@ -1208,8 +1185,8 @@ M &amp;= n_e \cdot V \cdot C + V\cdot\rho_b \cdot C_a \
 <p>The same approach can be adopted for the <strong>extraction</strong> scenarios, i.e. equilibrium desorption.</p>
 </section>
 <section id="additional-tool">
-<h2><span class="section-number">2.18. </span>Additional Tool<a class="headerlink" href="#additional-tool" title="Link to this heading">#</a></h2>
-<p>The additional tool: <a class="reference internal" href="#/contents/tools/1D_advection_dispersion"><span class="xref myst">1D-Advection-Dispersion Simulation Tool</span></a> simulates all the concepts that are provided above. The tool simulates:</p>
+<h2><span class="section-number">2.18. </span>Additional Tool<a class="headerlink" href="#additional-tool" title="Permalink to this heading">#</a></h2>
+<p>The additional tool: <span class="xref myst">1D-Advection-Dispersion Simulation Tool</span> simulates all the concepts that are provided above. The tool simulates:</p>
 <ul class="simple">
 <li><p>1D solute transport in porous media (e.g., laboratory column)</p></li>
 <li><p>uses unifrom cross-section</p></li>
@@ -1224,7 +1201,7 @@ M &amp;= n_e \cdot V \cdot C + V\cdot\rho_b \cdot C_a \
 </ul>
 </section>
 <section id="chapter-quiz">
-<h2><span class="section-number">2.19. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Link to this heading">#</a></h2>
+<h2><span class="section-number">2.19. </span>Chapter Quiz<a class="headerlink" href="#chapter-quiz" title="Permalink to this heading">#</a></h2>
 <div class="cell tag_remove-input tag_hide-output docutils container">
 <details class="hide above-output">
 <summary aria-label="Toggle hidden content">
@@ -2205,8 +2182,8 @@ if (typeof version == 'undefined') {
               
               
               
-                <footer class="prev-next-footer d-print-none">
-                  
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="../L9/21_conservative_transport.html"
@@ -2234,7 +2211,6 @@ if (typeof version == 'undefined') {
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -2282,10 +2258,9 @@ By Institute of Groud Water -TU Dresden
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
-      © Copyright 2023.
+      © Copyright 2022.
       <br/>
     
   </p>
@@ -2315,8 +2290,8 @@ By Institute of Groud Water -TU Dresden
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
