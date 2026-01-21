@@ -26,6 +26,7 @@ Codes are available at this [GitHUB repository](https://github.com/iGW-TU-Dresde
 ### Main contributors of this version of the book
 
 The contents are developed by (not in any order):
+- Prof. Dr. Andreas Hartmann (TU Dresden)
 - Dr.rer. nat. Prabhas K Yadav (TU Dresden)
 - Prof. Rudolf Liedl (TU Dresden)
 - Prof. Peter Dietrich (UFZ Leipzig/Uni-Tübingen)
